@@ -134,9 +134,9 @@ export default function Menu(): JSX.Element {
                             <li key={index}>
                                 <a href={item.path} id={item.id}>
                                     <button
-                                        className={`h-full px-5 py-2 hover:text-blue ${
+                                        className={`h-full px-5 py-2 hover:text-azul ${
                                             currentPath === item.path
-                                                ? "border-b-2 border-blue"
+                                                ? "border-b-2 border-azul"
                                                 : "border-none"
                                         }`}>
                                         {item.pageTitle}
@@ -163,7 +163,7 @@ export default function Menu(): JSX.Element {
                         key={index}
                         className={`w-full flex px-4 py-4 ${
                             currentPath === item.path
-                                ? "bg-blue/40 text-white"
+                                ? "bg-azul/40 text-white"
                                 : "bg-white text-black"
                         }`}>
                         {item.pageTitle}
@@ -266,9 +266,9 @@ export default function Menu(): JSX.Element {
                                 <div key={index} className='h-full px-3'>
                                     {menuItem.subItem ? (
                                         <button
-                                            className={`inline-flex w-full justify-center items-center h-full px-5 py-2 hover:text-blue ${
+                                            className={`inline-flex w-full justify-center items-center h-full px-5 py-2 hover:text-azul ${
                                                 expanded
-                                                    ? "bg-blue/50 text-white"
+                                                    ? "bg-azul/50 text-white"
                                                     : "bg-transparent"
                                             }`}
                                             onClick={() => {
@@ -286,10 +286,10 @@ export default function Menu(): JSX.Element {
                                             href={menuItem.path}
                                             id={menuItem.id}>
                                             <button
-                                                className={`h-full px-5 py-2 border-b-2 hover:text-blue ${
+                                                className={`h-full px-5 py-2 border-b-2 hover:text-azul ${
                                                     currentPath ===
                                                     menuItem.path
-                                                        ? "border-blue"
+                                                        ? "border-azul"
                                                         : "border-white"
                                                 }`}>
                                                 {menuItem.pageTitle}
@@ -352,7 +352,7 @@ export default function Menu(): JSX.Element {
                                                     <button
                                                         className={`inline-flex w-full  items-center h-full px-4 py-4 ${
                                                             expanded
-                                                                ? "bg-blue/50 text-white"
+                                                                ? "bg-azul/50 text-white"
                                                                 : "bg-transparent"
                                                         }`}
                                                         style={{ transition: 'background-color 100ms ease-in-out, opacity 300ms ease-in-out' }}
@@ -405,7 +405,7 @@ export default function Menu(): JSX.Element {
                                                     className={`w-full flex px-4 py-4 ${
                                                         currentPath ===
                                                         menuItem.path
-                                                            ? "bg-blue/40 text-white"
+                                                            ? "bg-azul/40 text-white"
                                                             : "bg-white text-black"
                                                     }`}
                                                     id={menuItem.id}>

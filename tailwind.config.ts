@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        blue: '#2758E9'
+        'azul': '#165CFF',
+        'baby-blue': '#93D0FF',
+        'ghost-white': '#F6F9FF',
+        'ironside-grey': '#666666'
       },
     },
   },
