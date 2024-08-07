@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning style={{width:"1440px",margin:"0 auto"}}>
+      <body suppressHydrationWarning>
         <Layout>
           <Menu />
           <SmoothScrolling>
