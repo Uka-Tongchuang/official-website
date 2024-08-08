@@ -7,14 +7,24 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "sm": {"min":"320px","max":"480px"},
+      "md": "481px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px",
+      "3xl": "1920px",
+    },
     extend: {
       colors: {
-        'azul': '#165CFF',
-        'baby-blue': '#93D0FF',
-        'ghost-white': '#F6F9FF',
-        'ironside-grey': '#666666'
-      },
-    },
+        azul: "#165CFF",
+        "baby-blue": "#93D0FF",
+        "ghost-white": "#F6F9FF",
+        "ironside-grey": "#666666",
+        "footer-black":"#2B2E3A",
+        "nav-font-color": "#ABABAB"
+      }
+    }
   },
   plugins: [],
 };
