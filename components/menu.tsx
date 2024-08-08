@@ -43,7 +43,7 @@ export default function Menu(): JSX.Element {
                 },
                 {
                     pageTitle: "招聘流程外包",
-                    path: "/products/recruitment-outsource",
+                    path: "/products/recruitment",
                     id: "recruitment",
                 },
                 {
