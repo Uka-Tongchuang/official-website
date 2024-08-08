@@ -17,6 +17,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+<<<<<<< HEAD
         azul: "#165CFF",
         "baby-blue": "#93D0FF",
         "ghost-white": "#F6F9FF",
@@ -25,6 +26,18 @@ const config: Config = {
         "nav-font-color": "#ABABAB"
       }
     }
+=======
+        'azul': '#165CFF',
+        'alice-blue': '#F1F8FF',
+        'alabaster': '#F8FAFD',
+        'dark-jungle': '#222222',
+        'dune': '#333333',
+        'ironside-grey': '#666666',
+        'silver-chalice': '#ABABAB',
+        'periwinkle': '#C0D3FF'
+      },
+    },
+>>>>>>> cabf784f0561e6693f27d9fc44865e08bc5df188
   },
   plugins: [],
 };
