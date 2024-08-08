@@ -20,8 +20,7 @@ interface TextItem {
 }
 type textArray = Array<TextItem>
 
-export default function Recruitment() {
-
+export default function BusinessOutSource() {
     const [cardData, setCardData] = useState<cardArray>([]);
     const [textData, setTextData] = useState<textArray>([]);
     const [loading, setLoading] = useState(true);
@@ -30,7 +29,7 @@ export default function Recruitment() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("../api/recruitment-data");
+                const response = await fetch("../api/home-page-data");
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
@@ -58,7 +57,7 @@ export default function Recruitment() {
 
     return (
         <div>
-            <ul style={{ marginTop: "90px" }}>
+            <ul style={{ marginTop: "80px" }}>
                 <h1 style={{ color: "#ff0000" }}>Card Data</h1>
                 {cardData.map((item, index) => (
                     <li key={index}>{item.content}</li> // Replace `column_name` with your actual column name
@@ -71,5 +70,4 @@ export default function Recruitment() {
             </ul>
         </div>
     );
-
 }
