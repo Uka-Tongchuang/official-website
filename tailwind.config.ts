@@ -18,7 +18,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        azul: "#165CFF",
+        "azul": "#165CFF",
         "baby-blue": "#93D0FF",
         "ghost-white": "#F6F9FF",
         "ironside-grey": "#666666",
