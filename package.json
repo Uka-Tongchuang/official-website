@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.4.0",
     "framer-motion": "^11.3.19",
     "lenis": "^1.1.9",
     "mysql2": "^3.11.0",

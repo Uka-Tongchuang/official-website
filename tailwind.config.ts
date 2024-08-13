@@ -10,7 +10,7 @@ const config: Config = {
     screens: {
       xs: '480px',
       sm: '640px',
-      md: "768px",
+      md: "870px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1440px",
@@ -23,8 +23,24 @@ const config: Config = {
         "ghost-white": "#F6F9FF",
         "ironside-grey": "#666666",
         "footer-black":"#2B2E3A",
-        "nav-font-color": "#ABABAB"
-      }
+        "nav-font-color": "#ABABAB",
+        "card-bg-color":"#FAFBFF"
+      },
+      fontSize:{
+        ssm:"8px",
+        xs:"10px",
+        sm:"12px",
+        md:"14px",
+        lg:"16px",
+        xl:"20px",
+        "2xl":"24px",
+        "3xl":"30px",
+        "4xl":"42px",
+      },
+      fontFamily: {
+        square: ['PingFang SC', 'Noto Sans SC', 'sans-serif'],
+        microsoftYahei: ['Microsoft YaHei', '微软雅黑', 'sans-serif'],
+      },
     }
   },
   plugins: [],
