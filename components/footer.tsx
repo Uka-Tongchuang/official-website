@@ -28,7 +28,7 @@ export default function Footer(): JSX.Element {
   };
 
   return (
-    <div className="h-auto">
+    <div className="">
       {/* 移动和平板端 */}
       <div className="box w-[95%] m-auto  xl:hidden">
         <div className="footer-menu-container">
@@ -186,24 +186,24 @@ export default function Footer(): JSX.Element {
           <div className="h-[417px] pt-[64px] w-[80%] m-auto flex justify-between ">
             {/* 第一个盒子logo */}
             <div className="">
-              <Image
-                className="w-[90px] h-[66px]"
-                src={Logo}
-                alt=""
-              />
+              <Image className="w-[90px] h-[66px]" src={Logo} alt="" />
               <div className="mt-[40px] mb-4 flex items-center text-white text-lg">
                 <span>
                   {" "}
                   <Image className="w-[20px] h-[20px]" src={YouXian} alt="" />
                 </span>
-                <span className="ml-2 text-nav-font-color">1008611@163.com</span>
+                <span className="ml-2 text-nav-font-color">
+                  1008611@163.com
+                </span>
               </div>
               <div className=" flex mb-4 items-center text-white text-lg">
                 <span>
                   {" "}
                   <Image className="w-[20px] h-[20px]" src={Address} alt="" />
                 </span>
-                <span className="ml-2 text-nav-font-color">四川省成都市锦江区东大路xx号</span>
+                <span className="ml-2 text-nav-font-color">
+                  四川省成都市锦江区东大路xx号
+                </span>
               </div>
               <div className=" flex items-center text-white text-lg">
                 <span>
@@ -215,7 +215,7 @@ export default function Footer(): JSX.Element {
               <div className="flex mt-[40px]">
                 <Image className="w-[20px] h-[20px]" src={WxWhite} alt="" />
                 <Image
-                  className="w-[20px] h-[20px] ml-[20px] "
+                  className="w-5 h-[20px] ml-[20px]"
                   src={QQWhite}
                   alt=""
                 />
@@ -229,32 +229,37 @@ export default function Footer(): JSX.Element {
             {/* 第二个 */}
             <div className="flex w-[33%]">
               <div className="w-[50%]">
-                <a href="#" className="text-white text-xl flex mb-[40px]">产品服务</a>
+                <span className="text-white text-xl flex mb-[40px]">
+                  产品服务
+                </span>
                 <div className="flex flex-col justify-around h-60 text-md text-nav-font-color">
-                  <a href="#">人事派遣</a>
-                  <a href="#">劳务派遣</a>
-                  <a href="#">岗位外包</a>
-                  <a href="#">业务外包</a>
-                  <a href="#">招聘流程外包</a>
-                  <a href="#">灵活用工解决方案</a>
+                  <a href="/products/personnel-dispatch">人事派遣</a>
+                  <a href="/products/labor-dispatch">劳务派遣</a>
+                  <a href="/products/position-outsource">岗位外包</a>
+                  <a href="/products/business-outsource">业务外包</a>
+                  <a href="/products/recruitment">招聘流程外包</a>
+                  <a href="/products/flexible-outsource">灵活用工解决方案</a>
                 </div>
               </div>
               <div className="text-white text-xl flex flex-col w-[33%] ml-2">
-                <a href="#">了解公司</a>
-                <a href="#" className="mt-[40px]">解决方案</a>
-                <a href="#" className="mt-[40px]">客户案例</a>
+                <a href="/about-us">了解公司</a>
+                <a href="/customer-case" className="mt-[40px]">
+                  解决方案
+                </a>
+                <a href="/customer-case" className="mt-[40px]">
+                  客户案例
+                </a>
               </div>
-              
             </div>
             {/* 第三个 */}
             <div className="w-[33%]">
-                <Image className="w-[176px] h-[191px]" src={UsImg} alt="" />
+              <Image className="w-[176px] h-[191px]" src={UsImg} alt="" />
             </div>
           </div>
           {/* 下部分 */}
           <div className="w-[70%] text-white h-[100px] m-auto border-t border-y-zinc-600 flex flex-col justify-center items-center">
-          <p className="text-center">2023今创人力有限公司</p>
-          <p>The company was established in 2023</p>
+            <p className="text-center">2023今创人力有限公司</p>
+            <p>The company was established in 2023</p>
           </div>
         </div>
       </div>

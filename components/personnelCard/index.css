@@ -1,0 +1,23 @@
+.card_box>div {
+    box-shadow: 0 0 6px 1px #f0f7f8;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.card_box>div h4 {
+    font-size: 16px;
+    margin-top: 20px 0;
+    font-family: Arial, "微软雅黑", Helvetica, sans-serif;
+}
+
+.card_box>div p {
+    font-size: 12px;
+    width: 162px;
+    height: 72px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.card_box>div img {
+    margin-left: 110px;
+}

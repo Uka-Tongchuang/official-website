@@ -1,0 +1,22 @@
+.box{
+    background: linear-gradient(to bottom,#fff,#FAFBFF);
+}
+.item_boxs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 10px 10px -5px #eef3fc;
+    border-radius: 12px;
+}
+.item_boxs > div {
+    width: 200px;
+    height: 220px;
+    border-radius: 8px;
+    background: linear-gradient(to top, #fff, #F7FAFF);
+    box-shadow: 0 0 10px 1px #eef3fc; /* 垂直偏移设置为正数，取消上边框阴影 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+}

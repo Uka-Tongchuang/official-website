@@ -9,7 +9,7 @@ type propsType = {
 
 const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
   return (
-    <div className="w-full h-[465px] bg-ghost-white">
+    <div className="w-full xl:h-[465px] bg-ghost-white">
       <div className="w-[80%] m-auto flex justify-between items-center">
         <div className="w-[50%]">
           <h1 className="font-bold text-4xl mb-[54px]">{title}</h1>

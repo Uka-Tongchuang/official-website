@@ -13,16 +13,41 @@ import Enterprisetwo from "@/public/home-icon/qiye 2.png";
 import People from "@/public/home-icon/renqun1 1.png";
 import Peopletwo from "@/public/home-icon/renqun1 2.png";
 //card-icon
-import CardFirst from "@/public/cart-icon/Mask group-one.png"
-import CardSecond from "@/public/cart-icon/Mask group-two.png"
-import CardThird from "@/public/cart-icon/Mask group-three.png"
-import CardFourth from "@/public/cart-icon/Mask group-four.png"
-import CardFifth from "@/public/cart-icon/Mask group-five.png"
-import CardSixth from "@/public/cart-icon/Mask group-six.png"
+import CardFirst from "@/public/cart-icon/Mask group-one.png";
+import CardSecond from "@/public/cart-icon/Mask group-two.png";
+import CardThird from "@/public/cart-icon/Mask group-three.png";
+import CardFourth from "@/public/cart-icon/Mask group-four.png";
+import CardFifth from "@/public/cart-icon/Mask group-five.png";
+import CardSixth from "@/public/cart-icon/Mask group-six.png";
+//logo-imgs
+import LogoFirst from "@/public/home-icon/one.png";
+import tlogoone from "@/public/home-icon/two.png";
+import tthreeLogo from "@/public/home-icon/three.png";
+import tfourLogo from "@/public/home-icon/four.png";
+import tfiveLogo from "@/public/home-icon/five.png";
+import tsixLogo from "@/public/home-icon/six.png";
+import tsevenLogo from "@/public/home-icon/seven.png";
+import teightLogo from "@/public/home-icon/eight.png";
+import tnineLogo from "@/public/home-icon/nine.png";
+import ttenLogo from "@/public/home-icon/ten.png";
+
+import boneLogo from "@/public/home-icon/sfexpress 1.png";
+import btwoLogo from "@/public/home-icon/image 71.png";
+import bthreeLogo from "@/public/home-icon/image 72.png";
+import bfourLogo from "@/public/home-icon/image 73.png";
+import bfiveLogo from "@/public/home-icon/changzuimao 1.png";
+import bsixLogo from "@/public/home-icon/image 74.png";
+import bsevenLogo from "@/public/home-icon/image 75.png";
+import beightLogo from "@/public/home-icon/image 76.png";
+import bnineLogo from "@/public/home-icon/image 77.png";
+import btenLogo from "@/public/home-icon/image 78.png";
 
 function Home() {
   return (
-    <div className="home_box font-square md:font-microsoftYahei xl:font-microsoftYahei w-full mb-[50px]" style={{ fontFamily: "微软雅黑"}}>
+    <div
+      className="home_box font-square md:font-microsoftYahei xl:font-microsoftYahei w-full "
+      style={{ fontFamily: "微软雅黑" }}
+    >
       {/* 首页顶部img */}
       <div className="h-72 md:h-[30rem] xl:h-[46rem] w-full flex flex-col align-middle relative imgbox">
         <h1 className="text-white text-xl md:text-3xl xl:text-5xl font-semibold absolute top-[40%] left-[5%]">
@@ -128,9 +153,11 @@ function Home() {
                 成都今创人力资源有限公司
               </h3>
               <p className="text-nav-font-color text-base md:text-lg   xl:m-[10%]">
-                “今创人力”，是一家致力于全球为企业客户提供全面人力资源服务解决方案的专业公司 ，业务范围涵盖，人事管理、劳务派遣、岗位外包、灵活用工等在内的一站式人力资源综合解决方案。
+                “今创人力”，是一家致力于全球为企业客户提供全面人力资源服务解决方案的专业公司
+                ，业务范围涵盖，人事管理、劳务派遣、岗位外包、灵活用工等在内的一站式人力资源综合解决方案。
                 <span className="hidden md:inline xl:inline">
-                  旗下分支机构和服务网点覆盖全国各地等一二线主要地市；与国内多家行业领军企业深入合作，拥有四个地市人力资源平台经济产业园运营权； 成都今创人力资源有限公司是万古人力旗下独立运营的人力公司,是一家综合性人力资源服务集团。
+                  旗下分支机构和服务网点覆盖全国各地等一二线主要地市；与国内多家行业领军企业深入合作，拥有四个地市人力资源平台经济产业园运营权；
+                  成都今创人力资源有限公司是万古人力旗下独立运营的人力公司,是一家综合性人力资源服务集团。
                 </span>
               </p>
             </div>
@@ -138,7 +165,7 @@ function Home() {
         </div>
       </div>
       {/* 业务系统 */}
-      <div className="product_services w-full h-auto xl:h-auto xl:mb-[80px] font-square">
+      <div className="product_services w-full h-auto xl:h-auto font-square">
         <div className="product_title  w-full  h-14 xl:h-24 flex justify-center items-center text-lg font-bold">
           业务系统 产品服务
         </div>
@@ -147,7 +174,7 @@ function Home() {
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[160px]  h-auto md:h-64 xl:w-56  p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
               <span className="mr-2 w-[18px]">
-               <Image src={CardFirst} alt=""/>
+                <Image src={CardFirst} alt="" />
               </span>
               人事管理
             </h3>
@@ -174,7 +201,7 @@ function Home() {
           <div className="cart shadow-md  shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 w-[161px] to-white h-auto xl:w-56 p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
               <span className="mr-2 w-[18px]">
-                <Image src={CardSecond} alt=""/>
+                <Image src={CardSecond} alt="" />
               </span>
               劳务派遣
             </h3>
@@ -198,7 +225,7 @@ function Home() {
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 w-[160px] to-white  h-auto xl:w-56 p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
               <span className="mr-2 w-[18px]">
-              <Image src={CardThird} alt=""/>
+                <Image src={CardThird} alt="" />
               </span>
               岗位外包
             </h3>
@@ -222,7 +249,7 @@ function Home() {
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[161px] h-auto xl:w-56 p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
               <span className="mr-2 w-[18px]">
-              <Image src={CardFourth} alt=""/>
+                <Image src={CardFourth} alt="" />
               </span>
               业务外包
             </h3>
@@ -246,7 +273,7 @@ function Home() {
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[160px] h-auto xl:w-56 md:h-64 p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
               <span className="mr-2 w-[18px]">
-              <Image src={CardFifth} alt=""/>
+                <Image src={CardFifth} alt="" />
               </span>
               招聘流程外包
             </h3>
@@ -270,7 +297,7 @@ function Home() {
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[161px] h-auto xl:w-56 md:h-64 rounded-lg p-3">
             <h3 className="text-md md:text-lg font-semibold flex items-center pt-3">
               <span className="mr-2 w-[18px]">
-              <Image src={CardSixth} alt=""/>
+                <Image src={CardSixth} alt="" />
               </span>
               灵活用工
             </h3>
@@ -289,14 +316,90 @@ function Home() {
               </li>
             </ul>
           </div>
-          <div className="h-full hidden md:flex  md:justify-center md:items-center  xl:flex  xl:justify-center xl:items-center xl:w-56" >
-            <span className="h-12 w-full bg-azul text-white flex justify-center items-center text-lg">更多服务敬请期待</span>
+          <div className="h-full hidden md:flex  md:justify-center md:items-center  xl:flex  xl:justify-center xl:items-center xl:w-56">
+            <span className="h-12 w-full bg-azul text-white flex justify-center items-center text-lg">
+              更多服务敬请期待
+            </span>
           </div>
         </div>
       </div>
-
-      <div className="cooperate_box ">
-     
+      {/* 合作伙伴 */}
+      <div className="cooperate_box xl:w-full xl:h-[572px] xl:mt-[80px]">
+        <div className="content w-[80%] m-auto ">
+          <h3 className="text-[32px] font-bold w-full flex justify-center items-center h-[108px]">
+            合作伙伴
+          </h3>
+          <div className="w-full logobox">
+            <div className="itemlogo">
+              <div>
+                <Image className="w-[46px] h-[46px]" src={LogoFirst} alt="" />
+              </div>
+              <div>
+                <Image className="w-[91px] h-[44px]" src={tlogoone} alt="" />
+              </div>
+              <div>
+                <Image className="w-[143px] h-[34px]" src={tthreeLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[140px] h-[34px]" src={tfourLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[144px] h-[48px]" src={tfiveLogo} alt="" />
+              </div>
+            </div>
+            <div className="itemlogo">
+              <div>
+                <Image className="w-[116px] h-[44px]" src={tsixLogo} alt="" />
+              </div>
+              <div>
+              <Image className="w-[163px] h-[20px]" src={tsevenLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[92px] h-[46px]" src={teightLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[108px] h-[40px]" src={tnineLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[52px] h-[52px]" src={ttenLogo} alt="" />
+              </div>
+            </div>
+            <div className="itemlogo">
+              <div>
+                <Image className="w-[97px] h-[44px]" src={boneLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[107px] h-[42px]" src={btwoLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[102px] h-[52px]" src={bthreeLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[42px] h-[42px]" src={bfourLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[150px] h-[32px]" src={bfiveLogo} alt="" />
+              </div>
+            </div>
+            <div className="itemlogo">
+              <div>
+                <Image className="w-[96px] h-[54px]" src={bsixLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[52px] h-[59px]" src={bsevenLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[42px] h-[42px]" src={beightLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[86px] h-[36px]" src={bnineLogo} alt="" />
+              </div>
+              <div>
+                <Image className="w-[113px] h-[42px]" src={btenLogo} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
