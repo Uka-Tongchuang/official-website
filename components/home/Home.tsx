@@ -142,7 +142,7 @@ function Home() {
         <div className="product_title  w-full  h-14 xl:h-24 flex justify-center items-center text-lg font-bold">
           业务系统 产品服务
         </div>
-        <div className="cartbox md:w-[80%] md:m-auto xl:w-[80%] xl:m-auto grid grid-cols-2 gap-4  p-[18px]  md:grid md:grid-cols-4">
+        <div className="cartbox md:w-[80%] md:m-auto xl:w-[80%] xl:m-auto grid grid-cols-2 gap-4  p-[18px] sm:grid-cols-3  md:grid md:grid-cols-4 place-items-center items-stretch">
           {/* 人事管理 */}
           <div className="cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[160px]  h-auto md:h-64 xl:w-56  p-3 rounded-lg">
             <h3 className="text-md md:text-lg font-semibold flex items-center">
