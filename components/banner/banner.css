@@ -1,9 +1,3 @@
-.card_box>div {
-    box-shadow: 0 0 6px 1px #f0f7f8;
-    border-radius: 12px;
-    padding: 10px;
-}
-
 .indent-2 {
     @apply pl-2; /* 使用 padding-left 缩进两个字符 */
     text-indent: 2rem; /* 使用 text-indent 缩进 */

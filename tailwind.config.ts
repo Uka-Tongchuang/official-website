@@ -24,7 +24,8 @@ const config: Config = {
         "ironside-grey": "#666666",
         "footer-black":"#2B2E3A",
         "nav-font-color": "#ABABAB",
-        "card-bg-color":"#FAFBFF"
+        "card-bg-color":"#FAFBFF",
+        "ccc":"#666666"
       },
       fontSize:{
         ssm:"8px",
