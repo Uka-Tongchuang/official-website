@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning style={{ fontFamily: 'Microsoft YaHei' }}>
         <Layout>
           <Menu />
           <SmoothScrolling>

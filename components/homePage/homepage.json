@@ -1,0 +1,76 @@
+{
+    "banner": {
+        "title": "关于今创，了解今创",
+        "subtitle": "About Our Company, Learn About Jinchuang"
+    },
+    "aboutUs": {
+        "title": "关于公司",
+        "description": [
+            "“今创人力”，是一家致力于全球为企业客户提供全面人力资源服务解决方案的专业公司，业务范围涵盖，人事管理、劳务派遣、岗位外包、灵活用工等在内的一站式人力资源综合解决方案。",
+            "旗下分支机构和服务网点覆盖全国各地等一二线主要地市；与国内多家行业领军企业深入合作，拥有四个地市人力资源平台经济产业园运营权；成都今创人力资源有限公司是万古人力旗下独立运营的人力公司,是一家综合性人力资源服务集团。"
+        ]
+    },
+    "services": [
+        {
+            "title": "人事管理",
+            "features": [
+                "社会保险和住房公积金服务",
+                "员工关系管理",
+                "健康体检服务",
+                "商业保险服务",
+                "人事档案"
+            ]
+        },
+        {
+            "title": "劳务派遣",
+            "features": [
+                "转移派遣服务",
+                "短期派遣服务",
+                "招聘派遣服务",
+                "长期派遣服务"
+            ]
+        },
+        {
+            "title": "岗位外包",
+            "features": [
+                "人事服务案例",
+                "员工关系管理",
+                "员工培训管理",
+                "招聘管理"
+            ]
+        },
+        {
+            "title": "业务外包",
+            "features": [
+                "人员招聘、团队搭建",
+                "业务运营管理",
+                "办公场所及商业场地租赁",
+                "薪酬、福利、绩效管理"
+            ]
+        },
+        {
+            "title": "招聘流程外包",
+            "features": [
+                "需求分析和准备",
+                "收集与筛选候选人",
+                "客户评审与聘用",
+                "项目跟踪与服务保障"
+            ]
+        },
+        {
+            "title": "灵活用工",
+            "features": [
+                "国内早起实践者",
+                "合作模式多样化",
+                "服务经验丰富",
+                "交付能力卓越"
+            ]
+        }
+    ],
+    "partners": [
+        ["LogoFirst", "tlogoone", "tthreeLogo", "tfourLogo", "tfiveLogo"],
+        ["tsixLogo", "tsevenLogo", "teightLogo", "tnineLogo", "ttenLogo"],
+        ["boneLogo", "btwoLogo", "bthreeLogo", "bfourLogo", "bfiveLogo"],
+        ["bsixLogo", "bsevenLogo", "beightLogo", "bnineLogo", "btenLogo"]
+    ]
+}
