@@ -10,26 +10,22 @@ function AboutUs() {
     const aboutUs = content.aboutUs;
 
     return (
-        <div className='aboutus w-full h-52 md:h-96 xl:h-1/3 '>
-            <div className='aboutus_banner_box h-full xl:w-[80%] m-auto font-square'>
-                <h3 className='h-12 md:h-24 flex justify-center items-center font-semibold text-lg md:text-3xl'>
-                    {aboutUs.title}
-                </h3>
-                <div className='aboutus_content h-full w-full flex relative'>
-                    <div className='img hidden w-1/2 md:hidden xl:block xl:w-2/5 xl:mt-10'>
-                        <Image src={img} alt='' />
-                    </div>
-                    <div className='text text-md w-60 absolute top-[40%] left-[50%] md:left-[50%] md:top-[10rem] md:w-96 xl:w-[40%] xl:h-[28rem] xl:bg-white xl:shadow-xl xl:left-[50%] xl:top-[40%] xl:ml-[20%] translate-x-[-50%] translate-y-[-50%]'>
-                        <h3 className='hidden md:hidden w-full xl:text-2xl xl:inline-block xl:pt-10 xl:text-center'>
-                            {aboutUs.title}
+        <div className='w-full h-fit my-6 md:my-10'>
+            <h3 className='flex justify-center items-center font-semibold text-lg md:text-3xl'>
+                {aboutUs.title}
+            </h3>
+            <div className='h-fit md:h-[40vh] w-full flex flex-row justify-center my-2 md:my-10'>
+                <div className='hidden basis-1/2 md:flex md:justify-center'>
+                    <Image src={img} alt='' className='h-full w-auto' />
+                </div>
+                <div className='w-[80%] md:basis-1/2 md:w-fit'>
+                    <div className='w-full md:w-[80%] h-full flex flex-col justify-center md:bg-white md:shadow-xl p-1 md:p-10'>
+                        <h3 className='hidden w-full md:text-xl md:block md:text-center'>
+                            {aboutUs.cardTitle}
                         </h3>
-                        {aboutUs.description.map((paragraph, index) => (
-                            <p
-                                key={index}
-                                className='text-nav-font-color text-base md:text-lg xl:m-[10%]'>
-                                {paragraph}
-                            </p>
-                        ))}
+                        <p className='text-nav-font-color text-md md:text-lg py-2 md:py-6'>
+                            {aboutUs.description}
+                        </p>
                     </div>
                 </div>
             </div>
