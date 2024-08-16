@@ -8,15 +8,15 @@ import { serverImg } from "@/public/renshi";
 import content from "./personnel.json"
 function ServerCom() {
   return (
-    <div className="w-full h-[480px]">
-      <div className="w-[80%] m-auto xl:flex xl:justify-around xl:items-center">
-        <div className="xl:w-[460px] xl:h-[340px] xl:p-4 xl:mt-[58px]">
-          <Image className="w-full h-full" src={serverImg} alt="" />
+    <div className="w-full h-auto">
+      <div className="w-[80%] md:w-[80%] m-auto md:flex md:justify-between md:items-center xl:w-[80%] xl:flex xl:justify-between xl:items-center">
+        <div className="md:w-[100%] xl:w-[40%] xl:h-auto xl:p-4 xl:mt-[58px]">
+          <Image className="object-contain p-10" loading="lazy" src={serverImg} alt="" />
         </div>
-        <div>
-          <h3 className="text-lg font-bold h-10 mt-4 xl:text-[32px] xl:font-bold xl:mb-[50px]">{content.benefits.title}</h3>
+        <div className="xl:w-[46%] xl:mt-2">
+          <h3 className="text-lg font-bold mt-4 md:mt-0 md:text-xl xl:text-[32px] xl:font-bold xl:mb-[50px]">{content.benefits.title}</h3>
           <p
-            className="indent-2 text-md xl:w-[420px] xl:h-[168px] xl:text-md text-ccc"
+            className="text-md mt-6 xl:w-[420px] xl:h-[168px] xl:text-md text-nav-font-color"
           >
             {content.benefits.content}
           </p>

@@ -1,0 +1,33 @@
+.box {
+    background: linear-gradient(to bottom, #fff, #FAFBFF);
+}
+
+.boxs {
+    background: linear-gradient(to bottom, #F8FAFF, #EBF0FF);
+}
+
+.item_boxs>div {
+    border-radius: 8px;
+    background: linear-gradient(to top, #fff, #F7FAFF);
+    box-shadow: 0 0 10px 1px #eef3fc;
+    /* 垂直偏移设置为正数，取消上边框阴影 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+
+/* 默认的 Carousel 圆点样式为灰色 */
+.ant-carousel .slick-dots li button {
+    background: #aaa9a9; /* 默认灰色 */
+    transition: background 0.3s ease;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: #165CFF; /* 激活状态的颜色 */
+}
+
+.ant-carousel .slick-dots li:hover button {
+    background: #165CFF; /* 划过时的高亮颜色 */
+}

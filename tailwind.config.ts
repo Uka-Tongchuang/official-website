@@ -25,7 +25,9 @@ const config: Config = {
         "footer-black":"#2B2E3A",
         "nav-font-color": "#ABABAB",
         "card-bg-color":"#FAFBFF",
-        "ccc":"#666666"
+        "ccc":"#666666",
+        "m-color":"#F7F7F7",
+        "a-color":"#F8FAFD"
       },
       fontSize:{
         ssm:"8px",
