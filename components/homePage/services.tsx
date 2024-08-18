@@ -22,11 +22,11 @@ export default function Services(): JSX.Element {
     const services = content.services;
 
     return (
-        <div className='w-full h-auto xl:h-auto font-square'>
-            <div className='text-[32px] font-bold w-full flex justify-center items-center'>
+        <div className='w-full h-fit flex flex-col justify-center items-center my-6 md:my-10 '>
+            <h2 className='font-bold text-lg md:text-h2'>
                 业务系统 产品服务
-            </div>
-            <div className='cartbox md:w-[80%] md:m-auto xl:w-[80%] xl:m-auto grid grid-cols-2 gap-4 p-[18px] sm:grid-cols-3 md:grid md:grid-cols-4 place-items-center items-stretch'>
+            </h2>
+            <div className='w-[90%] md:w-[80%] m-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center items-stretch gap-x-4 gap-y-8 my-2 md:my-10'>
                 {services.map((service, index) => (
                     <Card
                         key={index}

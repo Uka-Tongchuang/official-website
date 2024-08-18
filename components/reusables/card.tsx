@@ -10,18 +10,16 @@ interface CardProps {
 export default function ServiceCard(props: CardProps): JSX.Element {
     const { title, features, icon } = props;
     return (
-        <div className='cart shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-[160px] h-auto xl:w-56 p-3 rounded-lg'>
+        <div className='shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-full h-full px-4 py-4 md:py-8 rounded-lg'>
             <h3 className='text-md md:text-lg font-semibold flex items-center'>
-                <span className='mr-2 w-[18px]'>
-                    <Image src={icon} alt='' />
-                </span>
+                <Image src={icon} alt='' className='w-5 h-auto mr-2' />
                 {title}
             </h3>
-            <ul className='space-y-2 mt-2 h-[86%] flex flex-col justify-around'>
+            <ul className='list-disc list-inside space-y-2 md:space-y-4 mt-2 h-max justify-around marker:text-blue-500 text-sm md:text-md'>
                 {features.map((feature, index) => (
                     <li
                         key={index}
-                        className='relative pl-4 text-sm md:text-[0.86rem] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:rounded-full before:bg-blue-500'>
+                        className=''>
                         {feature}
                     </li>
                 ))}

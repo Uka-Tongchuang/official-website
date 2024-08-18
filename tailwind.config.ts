@@ -39,6 +39,7 @@ const config: Config = {
         "2xl":"24px",
         "3xl":"30px",
         "4xl":"42px",
+        h2: "32px"
       },
       fontFamily: {
         square: ['PingFang SC', 'Noto Sans SC', 'sans-serif'],

@@ -10,8 +10,8 @@ function AboutUs() {
     const aboutUs = content.aboutUs;
 
     return (
-        <div className='w-full h-fit my-6 md:my-10'>
-            <h3 className='flex justify-center items-center font-semibold text-lg md:text-3xl'>
+        <div className='w-full h-fit my-6 md:my-10 flex flex-col items-center'>
+            <h3 className='font-bold text-lg md:text-h2'>
                 {aboutUs.title}
             </h3>
             <div className='h-fit md:h-[40vh] w-full flex flex-row justify-center my-2 md:my-10'>
