@@ -17,9 +17,9 @@ function AdvantageCom() {
         {content.benefits.cards.map((item, index) => (
           <div
             key={index}
-            className="w-[90%] m-auto h-36 md:h-40 mt-4 bg-white rounded-lg shadow-md p-4"
+            className="w-[80%] m-auto h-36 md:h-40 mt-4 bg-white rounded-lg shadow-md p-4"
           >
-            <p className="text-md font-bold xl:text-lg">{item.title}</p>
+            <p className="text-md font-bold xl:text-lg xl:h-10">{item.title}</p>
             <p className="text-sm xl:text-md md:text-ironside-grey">
               {item.msg}
             </p>

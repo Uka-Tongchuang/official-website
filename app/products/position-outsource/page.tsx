@@ -3,6 +3,7 @@ import React from "react";
 // components
 import BannerCom from "@/components/banner/BannerCom";
 import ServiceCom from "@/components/position/ServiceCom";
+import ApplyCom from "@/components/position/ApplyCom";
 // img
 import { bgImg } from "@/public/position";
 function PositionOutsource() {
@@ -14,6 +15,7 @@ function PositionOutsource() {
         img={bgImg}
       />
       <ServiceCom />
+      <ApplyCom />
     </div>
   );
 }

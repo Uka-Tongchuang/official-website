@@ -15,13 +15,13 @@ function ServerCom() {
             return (
               <div
                 key={index}
-                className=" flex justify-between items-center w-full h-36 bg-white rounded-lg shadow-md p-4 mb-4"
+                className=" flex justify-between w-full h-36 bg-white rounded-lg shadow-md p-4 mb-4"
               >
                 <div className="w-[60%]">
                   <h4 className="font-bold text-lg text-sky-400">{item.title}</h4>
-                  <ul className="list-disc ml-5 mt-2 text-sm">
+                  <ul className="list-disc ml-5 mt-2 text-sm ">
                     {item.decs.map((v, i) => {
-                      return <li key={i} className="text-sky-600"><span className="text-ironside-grey xl:text-md">{v}</span></li>;
+                      return <li key={i} className="text-sky-600 xl:my-1"><span className="text-ironside-grey xl:text-sm">{v}</span></li>;
                     })}
                   </ul>
                 </div>

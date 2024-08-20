@@ -102,17 +102,19 @@ function ProcessCom() {
               className="flex w-[32%] md:w-[30%] h-20 xl:h-24 xl:mb-4 p-1 flex-col items-center justify-around m-1 rounded-md shadow-[0_4px_6px_-1px_rgba(107,114,128,0.3)] border-b-0 border-l-0 border-r-0 border-gray-300"
             >
               <div className="flex justify-center items-center">
-                <div className="w-6 h-6">
+                <div className="w-6 h-6 flex items-center justify-center ">
                   <Image
                     src={item.img}
                     alt={item.title}
                     className="object-contain"
                   />
+                  &ensp;
+                  <span className=" md:hidden text-sm ml-1">{padZero(item.num)}&ensp;</span>
                 </div>
               </div>
               <p className="text-center text-sm text-ironside-grey">
-                <span className="text-sm ml-1">{padZero(item.num)}</span>
-                {item.title}
+                <span className="hidden md:block text-sm ml-1">{padZero(item.num)}&ensp;{item.title}</span>
+                
               </p>
             </div>
           );

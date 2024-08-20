@@ -19,7 +19,7 @@ const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
     >
       <div className="xl:w-[80%] md:w-[80%] h-auto m-auto  md:flex md:justify-between md:items-center">
         <div className="xl:w-[40%] md:w-full">
-          <h1 className="w-full text-center m-auto font-bold text-lg pt-2 h-10  md:text-3xl md:mb-[54px] xl:text-4xl xl:pb-12">
+          <h1 className="w-[80%] text-center md:text-left m-auto font-bold text-lg pt-2 h-10  md:text-3xl md:mb-[54px] xl:text-4xl xl:pb-12">
             {title}
           </h1>
           <p className="w-[80%] m-auto text-md text-ironside-grey xl:text-lg">

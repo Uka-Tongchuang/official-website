@@ -28,7 +28,10 @@ const config: Config = {
         "ccc":"#666666",
         "m-color":"#F7F7F7",
         "a-color":"#F8FAFD",
-        "title-text-color":"#222222"
+        "title-text-color":"#222222",
+        "app-bg":"#FCFDFF",
+        "app-hr":"#E8EBED",
+        "circle-bg":"#F2F7FF"
       },
       fontSize:{
         ssm:"8px",

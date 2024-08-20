@@ -13,15 +13,10 @@ function flowPath() {
     { image: flowFour, title: "多元化解决方案" },
   ];
   //render
-  const renderCom = (img: StaticImageData, title: string): JSX.Element => {
+   const renderCom = (img: StaticImageData, title: string): JSX.Element => {
     return (
       <div className="h-[49%] flex  justify-between items-center">
-        <Image
-          className="w-32 h-32"
-          loading="lazy"
-          src={img}
-          alt=""
-        />
+        <Image className="w-32 h-32" loading="lazy" src={img} alt="" />
         <h4 className="text-xl">{title}</h4>
       </div>
     );
@@ -35,23 +30,15 @@ function flowPath() {
       >
         <div className="w-[80%] h-[400px] flex justify-between items-center m-auto">
           <div className="w-[49%] flex flex-col justify-between items-center">
-            {
-                renderCom(data[0].image, content.topic["topic-first"])
-            }
+            {renderCom(data[0].image, content.topic["topic-first"])}
             <div className="block h-[2px] w-[112px] rounded-sm bg-gray-200 "></div>
-            {
-                renderCom(data[1].image, content.topic["topic-second"])
-            }
+            {renderCom(data[1].image, content.topic["topic-second"])}
           </div>
           <div className="block w-[2px] h-[112px] rounded-sm bg-gray-200 "></div>
           <div className="w-[49%] flex flex-col justify-between items-center">
-            {
-                renderCom(data[2].image, content.topic["topic-third"])
-            }
+            {renderCom(data[2].image, content.topic["topic-third"])}
             <div className="h-[2px] w-[112px] rounded-sm bg-gray-200 "></div>
-            {
-                renderCom(data[3].image, content.topic["topic-fourth"])
-            }
+            {renderCom(data[3].image, content.topic["topic-fourth"])}
           </div>
         </div>
       </div>

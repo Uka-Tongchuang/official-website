@@ -1,0 +1,247 @@
+{
+    "contentservice": [
+        {
+            "title": "专业化顾问团队",
+            "msg": "档案管理、入离职管理、劳动关系管理、工会事务管理、社保公积金管理、薪酬福利管理、绩效考核管理、各项证明管理"
+        },
+        {
+            "title": "员工关系管理",
+            "msg": "退工处理、突发事件处理、劳动争议处理工伤、工亡等特殊事件处理"
+        },
+        {
+            "title": "员工培训管理",
+            "msg": "岗前入职培训、岗位技能专项培训、通用技能提升培训"
+        },
+        {
+            "title": "招聘管理",
+            "msg": "人才储备、精准寻访、人才测评"
+        }
+    ],
+    "appli": {
+        "first": [
+            "销售",
+            "店长",
+            "收银",
+            "店员",
+            "地摊",
+            "理货"
+        ],
+        "second": [
+            "线上客服",
+            "电话客服",
+            "采购助理",
+            "材料审核"
+        ],
+        "third": [
+            "行政文秘",
+            "业务助理",
+            "人事助理",
+            "财务助理"
+        ],
+        "fourth": [
+            "咖啡师",
+            "办公室文员",
+            "服务员",
+            "调酒师"
+        ]
+    },
+    "scenearr": [
+        {
+            "label": "行政文秘",
+            "icon": "circle big",
+            "line": "none",
+            "style": {
+                "top": "50%",
+                "left": "10%",
+                "diameter": "30",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "电话客服",
+            "icon": "circle big",
+            "line": "none",
+            "style": {
+                "top": "50%",
+                "right": "10%",
+                "diameter": "30",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "业务助理",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "40%",
+                "left": "25%",
+                "diameter": "16",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "销售",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "40%",
+                "right": "25%",
+                "diameter": "16",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "线上客服",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "30%",
+                "left": "40%",
+                "diameter": "25",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "调酒师",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": "30%",
+                "right": "40%",
+                "diameter": "25",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "办公室文员",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": "20%",
+                "left": "45%",
+                "diameter": "18",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "采购助理",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "30%",
+                "right": "45%",
+                "diameter": "18",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "材料审核",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": "30%",
+                "left": "60%",
+                "diameter": "17",
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "财务助理",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": "30%",
+                "right": "60%",
+                "diameter": "20",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "人事管理",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": "30%",
+                "right": "60%",
+                "diameter": "21",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "店长",
+            "icon": "circle",
+            "style": {
+                "top": "50%",
+                "left": "70%",
+                "diameter": "18",
+                  "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "服务员",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "50%",
+                "left": "70%",
+                "diameter": "16",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "店员",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "60%",
+                "left": "70%",
+                "diameter": "16",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "地推",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "70%",
+                "left": "70%",
+                "diameter": "18",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "理货",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "80%",
+                "left": "70%",
+                "diameter": "16",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "咖啡师",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "90%",
+                "left": "70%",
+                "diameter": "13",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "收银",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "90%",
+                "left": "70%",
+                "diameter": "18",
+                "bg":"bg-circle-bg"
+            }
+        }
+    ]
+}
