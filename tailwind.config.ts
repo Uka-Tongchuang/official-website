@@ -27,7 +27,8 @@ const config: Config = {
         "card-bg-color":"#FAFBFF",
         "ccc":"#666666",
         "m-color":"#F7F7F7",
-        "a-color":"#F8FAFD"
+        "a-color":"#F8FAFD",
+        "title-text-color":"#222222"
       },
       fontSize:{
         ssm:"8px",

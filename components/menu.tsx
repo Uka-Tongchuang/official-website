@@ -126,7 +126,7 @@ export default function Menu(): JSX.Element {
     if (expanded) {
       return (
         <div className="border-y border-gray-200 w-screen bg-white">
-          <ul className="flex flex-row w-full justify-between">
+          <ul className="flex flex-row w-full  justify-between items-center">
             {subItem.map((item, index) => (
               <li key={index}>
                 <a href={item.path} id={item.id}>
@@ -248,8 +248,8 @@ export default function Menu(): JSX.Element {
       )}
 
       {!isBreakpoint ? (
-        <div className="w-full flex flex-col fixed top-0 z-50 h-[140px] pb-6">
-          <div className="flex flex-row pt-8 px-10 items-center h-[70px] bg-white">
+        <div className="w-full flex flex-col fixed top-0 z-50 h-[140px]">
+          <div className="flex flex-row  px-10 items-center h-[70px] bg-white">
             <div className="h-full flex items-center">
               <a href="/" id="HomePage">
                 <Image
@@ -260,13 +260,13 @@ export default function Menu(): JSX.Element {
                 />
               </a>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row h-full">
               {menu.map((menuItem, index) => (
                 <div key={index} className="h-full px-3">
                   {menuItem.subItem ? (
                     <button
                       className={`inline-flex w-full justify-center items-center h-full px-5 py-2 hover:text-azul ${
-                        expanded ? "bg-azul/50 text-white" : "bg-transparent"
+                        expanded ? "bg-azul/50 text-white " : "bg-transparent"
                       }`}
                       onClick={() => {
                         expandOnClick(menuItem.subItem);

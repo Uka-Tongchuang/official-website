@@ -11,7 +11,7 @@ import { bannerBg } from "@/public/renshi";
 import content from "@/components/personnelCard/personnel.json";
 function PersonnelPage() {
   return (
-    <div className="mt-[70px]">
+    <div className="">
       <BannerCom
         title={content.personnel.title}
         msg={content.personnel.desc}

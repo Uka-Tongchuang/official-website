@@ -94,7 +94,7 @@ function ProcessCom() {
   //renderCard
   const renderCardItem = (arr: swiperArr) => {
     return (
-      <div className="flex h-40 md:h-60  items-center justify-between w-full">
+      <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-40 items-center justify-between">
         {arr.map((item: swiperItm, index) => {
           return (
             <div
@@ -109,10 +109,9 @@ function ProcessCom() {
                     className="object-contain"
                   />
                 </div>
-
-                <span className="text-lg ml-1">{padZero(item.num)}</span>
               </div>
               <p className="text-center text-sm text-ironside-grey">
+                <span className="text-sm ml-1">{padZero(item.num)}</span>
                 {item.title}
               </p>
             </div>
@@ -124,7 +123,7 @@ function ProcessCom() {
   return (
     <div>
       {/* //移动 */}
-      <div className="md:hidden  w-full m-auto p-4">
+      <div className="md:hidden w-full m-auto p-4">
         <h2 className="w-full h-10  flex justify-center items-center text-lg font-bold">
           招聘需求和公开招聘
         </h2>
@@ -141,38 +140,40 @@ function ProcessCom() {
         </div>
       </div>
       {/* //pc  平板 */}
-      <div className="hidden md:block w-[90%] h-96 m-auto xl:w-full xl:h-[30rem]">
+      <div className="hidden md:block w-[90%] h-auto m-auto xl:w-full xl:h-auto">
         <Carousel
           dotPosition="right"
           infinite={false}
           className=""
           dots={{ className: "slick-dots custom-dots" }}
-          style={{height:"100%"}}
+          adaptiveHeight
         >
           {content.swiper.map((item, index) => {
             return (
               <div
                 key={index}
-                className="w-full h-full z-30 flex justify-between items-center  rounded-lg shadow-lg p-6"
+                className="w-full h-auto md:h-[400px] xl:h-[500px] flex flex-col md:flex-row justify-between items-center bg-white rounded-lg shadow-lg p-6 overflow-hidden"
               >
                 {/* 左侧文本部分 */}
-                <div className="flex-1">
-                  <h3 className="text-lg xl:text-2xl text-center font-bold mb-4">
+                <div className="flex-1 md:w-[63%] md:m-auto text-center xl:text-left">
+                  <h3 className="text-lg xl:text-2xl md:text-center font-bold mb-4">
                     {item.title}
                   </h3>
-                  <p className="w-[80%] m-auto text-ironside-grey mb-4 xl:text-lg">
+                  <p className="w-[100%] m-auto xl:ml-0 text-ironside-grey mb-4 xl:text-lg md:text-left">
                     {item.message}
                   </p>
                 </div>
 
-                {/* 右侧图片部分 */}
-                <div className="w-full h-40 xl:h-52 flex justify-between items-center xl:mt-4">
-                  <Image
-                    className="object-contain w-40 xl:w-52 h-full p-6 xl:ml-20"
-                    src={swiperArr[index]}
-                    alt=""
-                  />
-                  <div className="h-72 w-[64%] mr-[15%] mt-14 md:mt-2 overflow-visible">
+                {/* 右侧图片和卡片部分 */}
+                <div className="flex flex-col md:flex-row md:w-[90%] md:m-auto items-center">
+                  <div className="w-auto h-full md:h-44 xl:h-52 flex justify-center md:justify-end items-center xl:mt-10">
+                    <Image
+                      className="object-contain w-40 xl:w-52 h-full xl:ml-20"
+                      src={swiperArr[index]}
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex-1 md:w-auto mt-6 flex ">
                     {renderCardItem(swiperArrDataPc[index])}
                   </div>
                 </div>
