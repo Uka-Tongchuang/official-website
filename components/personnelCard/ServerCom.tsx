@@ -14,7 +14,9 @@ function ServerCom() {
           <Image className="object-contain p-10" loading="lazy" src={serverImg} alt="" />
         </div>
         <div className="xl:w-[46%] xl:mt-2">
-          <h3 className="text-lg font-bold mt-4 md:mt-0 md:text-xl xl:text-[32px] xl:font-bold xl:mb-[50px]">{content.benefits.title}</h3>
+          <h3 className="text-lg font-bold mt-4 md:mt-0 md:text-xl xl:text-[32px] xl:font-bold xl:mb-[50px]">
+            {content.benefits.title}
+          </h3>
           <p
             className="text-md mt-6 xl:w-[420px] xl:h-[168px] xl:text-md text-nav-font-color"
           >
