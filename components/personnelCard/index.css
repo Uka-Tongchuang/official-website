@@ -1,7 +1,8 @@
 .card_box>div {
-    box-shadow: 0 0 6px 1px #f0f7f8;
+    box-shadow: 0 12px 6px -6px rgba(192, 211, 255, .2);
     border-radius: 12px;
     padding: 10px;
+    margin-bottom: 70px;
 }
 
 .indent-2 {

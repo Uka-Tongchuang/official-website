@@ -173,7 +173,7 @@ export default function Footer(): JSX.Element {
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
             <p className="text-3xl">
               已为超过<span className="text-azul">4,600</span>{" "}
-              家企业，服务人数超过<span className="text-azul">50W+</span>
+              家企业提供服务，服务人数超过<span className="text-azul">50W+</span>
             </p>
             <button className="w-[132px] h-[32px] flex justify-center items-center text-md text-white bg-azul">
               加入我们

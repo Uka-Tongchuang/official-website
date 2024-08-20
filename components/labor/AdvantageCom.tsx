@@ -6,16 +6,23 @@ import { bg } from "@/public/labor";
 import content from "./labor.json";
 function AdvantageCom() {
   return (
-    <div className="w-[90%] m-auto  bg-a-color">
-      <div className="w-[60%] m-auto">
-        <Image src={bg} alt="" />
+    <div className="w-[90%] h-auto m-auto md:w-[80%] bg-a-color md:flex md:items-center md:mt-20 md:mb-20 md:rounded-xl">
+      <div className="w-[60%] md:w-[40%] m-auto xl:p-4">
+        <Image src={bg} alt="" className="object-contain" />
       </div>
-      <div className="p-4">
-        <h4 className="font-bold text-lg">{content.benefits.title}</h4>
+      <div className="p-4 md:w-[58%]">
+        <h4 className="font-bold text-lg md:text-lg xl:text-3xl">
+          {content.benefits.title}
+        </h4>
         {content.benefits.cards.map((item, index) => (
-          <div key={index} className="w-[90%] m-auto h-36 mt-4 bg-white rounded-lg shadow-md p-4">
-            <p className="text-md font-bold">{item.title}</p>
-            <p className="text-sm">{item.msg}</p>
+          <div
+            key={index}
+            className="w-[90%] m-auto h-36 md:h-40 mt-4 bg-white rounded-lg shadow-md p-4"
+          >
+            <p className="text-md font-bold xl:text-lg">{item.title}</p>
+            <p className="text-sm xl:text-md md:text-ironside-grey">
+              {item.msg}
+            </p>
           </div>
         ))}
       </div>
