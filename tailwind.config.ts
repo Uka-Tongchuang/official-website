@@ -31,7 +31,19 @@ const config: Config = {
         "title-text-color":"#222222",
         "app-bg":"#FCFDFF",
         "app-hr":"#E8EBED",
-        "circle-bg":"#F2F7FF"
+        "circle-bg":"#F2F7FF",
+        "card-bg":"#FFF6F5",
+        "card-a-bg":"#FFF9F1",
+        "card-d-bg":"#E9FAFC",
+        "card-a-t":"#5598F9",
+        "card-b-t":"#FA887D",
+        "card-c-t":"#FAA352",
+        "card-d-t":"#62DDE9",
+        "g-color":"#333333",
+        "lg-bg-start":"#F2F8FF",
+        "lg-bg":"#CDE2FF",
+        "dashed-color":"#D7F0FF",
+        "g-start-color":"#83CAFF"
       },
       fontSize:{
         ssm:"8px",

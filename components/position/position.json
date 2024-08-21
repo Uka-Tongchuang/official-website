@@ -51,7 +51,7 @@
             "icon": "circle big",
             "line": "none",
             "style": {
-                "top": "50%",
+                "top": "38%",
                 "left": "10%",
                 "diameter": "30",
                 "bg":"bg-circle-bg"
@@ -62,10 +62,10 @@
             "icon": "circle big",
             "line": "none",
             "style": {
-                "top": "50%",
+                "top": "38%",
                 "right": "10%",
                 "diameter": "30",
-                "bg":"bg-white"
+                "bg":"bg-circle-bg"
             }
         },
         {
@@ -73,8 +73,8 @@
             "icon": "circle",
             "line": "dotted",
             "style": {
-                "top": "40%",
-                "left": "25%",
+                "top": "30%",
+                "left": "20%",
                 "diameter": "16",
                 "bg":"bg-white"
             }
@@ -84,8 +84,8 @@
             "icon": "circle",
             "line": "dotted",
             "style": {
-                "top": "40%",
-                "right": "25%",
+                "top": "30%",
+                "right": "20%",
                 "diameter": "16",
                 "bg":"bg-white"
             }
@@ -95,8 +95,8 @@
             "icon": "circle",
             "line": "dotted",
             "style": {
-                "top": "30%",
-                "left": "40%",
+                "top": "23%",
+                "left": "28%",
                 "diameter": "25",
                 "bg":"bg-white"
             }
@@ -106,8 +106,8 @@
             "icon": "circle",
             "line": "none",
             "style": {
-                "top": "30%",
-                "right": "40%",
+                "top": "23%",
+                "right": "28%",
                 "diameter": "25",
                 "bg":"bg-circle-bg"
             }
@@ -117,8 +117,8 @@
             "icon": "circle",
             "line": "none",
             "style": {
-                "top": "20%",
-                "left": "45%",
+                "top": "24%",
+                "left": "37%",
                 "diameter": "18",
                 "bg":"bg-circle-bg"
             }
@@ -142,7 +142,7 @@
                 "top": "30%",
                 "left": "60%",
                 "diameter": "17",
-                "bg":"bg-white"
+                "bg":"bg-circle-bg"
             }
         },
         {
@@ -159,7 +159,7 @@
         {
             "label": "人事管理",
             "icon": "circle",
-            "line": "none",
+            "line": "dotted",
             "style": {
                 "top": "30%",
                 "right": "60%",
@@ -242,6 +242,60 @@
                 "diameter": "18",
                 "bg":"bg-circle-bg"
             }
+        },
+        {
+            "label": "关键词",
+            "icon": "KEYWORD",
+            "line": "dashed",
+            "style": {
+                "top": "50%",
+                "left": "50%",
+                "diameter": "60",
+                "bg":"bg-white"
+            }
         }
-    ]
+    ],
+    "sericevalue":[
+        {
+            "title":"解决方案",
+            "desca":"一站式解决方案",
+            "descb":"专业风险管控",
+            "descc":"风险有效隔离"
+        },
+        {
+            "title":"覆盖范围",
+            "desca":"人员配置灵活",
+            "descb":"专业风险管控",
+            "descc":"降低企业成本"
+        },
+        {
+            "title":"专业团队",
+            "desca":"专业服务团队",
+            "descb":"高效获取人才",
+            "descc":"支持业务运行"
+        },
+        {
+            "title":"提升效率",
+            "desca":"摆脱事务工作",
+            "descb":"专注核心业务",
+            "descc":"提升终端销量"
+        }
+    ],
+    "benefits":{
+        "title":"服务优势",
+        "cards":[
+            {
+                "title":"岗位类别多样",
+                "msg":"自2014年开展外包业务以来，目前已为众多不同行业知名企业提供行政文员、运营、客服、配送、店员、技术开发等多元化岗位外包服务。"
+            },
+            {
+                "title":"服务经验丰富",
+                "msg":"多次承接万人以上的岗位外包项目，针对项目的转签、日常服务、裁撤等均有丰富的服务和管理经验。"
+            },
+            {
+                "title":"方案专属定制",
+                "msg":"可根据客户需求提供个性化岗位外包解决方案，以客户为导向，满足客户的个性化需求，保证服务质量。"
+            }
+        ]
+    }
 }

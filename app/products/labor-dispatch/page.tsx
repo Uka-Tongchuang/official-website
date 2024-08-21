@@ -8,6 +8,10 @@ import ProcessCom from "@/components/labor/ProcessCom";
 import CardCom from "@/components/labor/CardCom";
 import ServerCom from "@/components/labor/ServerCom";
 import AdvantageCom from "@/components/labor/AdvantageCom";
+// img
+import { bg } from "@/public/labor";
+// json
+import content from "@/components/labor/labor.json";
 function laborPage() {
   return (
     <div className="">
@@ -19,7 +23,7 @@ function laborPage() {
       <CardCom />
       <ProcessCom />
       <ServerCom />
-      <AdvantageCom />
+      <AdvantageCom img={bg} title={content.benefits.title} arr={content.benefits.cards}/>
     </div>
   );
 }

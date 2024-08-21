@@ -8,7 +8,7 @@ import Applys from "./applicom/Applys";
 import SceneCom from "./scene-com/SceneCom";
 function ApplyCom() {
   return (
-    <div>
+    <div className="w-full">
       <div className="md:hidden">
         <h3 className="w-full my-5 text-center text-lg font-bold text-title-text-color">
           适用场景
@@ -37,12 +37,13 @@ function ApplyCom() {
       </div>
       {/* md pc  */}
       <div className="hidden md:block">
-        <h3 className="w-full my-2 text-center text-lg font-bold text-title-text-color">
+        <h3 className="w-full my-2 xl:mt-8 text-center text-lg font-bold text-title-text-color xl:text-3xl">
           适用场景
         </h3>
-        <div className="w-[90%] m-auto">
+        <div className="w-[80%] m-auto h-auto">
           <SceneCom />
         </div>
+
       </div>
     </div>
   );

@@ -113,8 +113,8 @@ function ProcessCom() {
                 </div>
               </div>
               <p className="text-center text-sm text-ironside-grey">
+              <span className="block md:hidden">{item.title}</span>
                 <span className="hidden md:block text-sm ml-1">{padZero(item.num)}&ensp;{item.title}</span>
-                
               </p>
             </div>
           );
