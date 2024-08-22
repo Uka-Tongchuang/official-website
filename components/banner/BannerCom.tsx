@@ -14,7 +14,7 @@ const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
       className={`w-full h-auto mt-[70px] text-title-text-color py-4 ${
         title === "岗位外包"||"业务外包"
           ? "bg-gradient-to-b from-[#E8F1FF] to-[#fff]"
-          : "bg-ghost-white"
+          : "bg-a-color"
       }`}
     >
       <div className="xl:w-[80%] md:w-[80%] h-auto m-auto  md:flex md:justify-between md:items-center">

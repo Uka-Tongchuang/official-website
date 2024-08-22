@@ -1,6 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 //ui库
 import { Carousel } from "antd";
 // img
@@ -93,6 +93,7 @@ function ProcessCom() {
 
   //renderCard
   const renderCardItem = (arr: swiperArr) => {
+    
     return (
       <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-40 items-center justify-between">
         {arr.map((item: swiperItm, index) => {
@@ -109,12 +110,16 @@ function ProcessCom() {
                     className="object-contain"
                   />
                   &ensp;
-                  <span className=" md:hidden text-sm ml-1">{padZero(item.num)}&ensp;</span>
+                  <span className=" md:hidden text-sm ml-1">
+                    {padZero(item.num)}&ensp;
+                  </span>
                 </div>
               </div>
               <p className="text-center text-sm text-ironside-grey">
-              <span className="block md:hidden">{item.title}</span>
-                <span className="hidden md:block text-sm ml-1">{padZero(item.num)}&ensp;{item.title}</span>
+                <span className="block md:hidden">{item.title}</span>
+                <span className="hidden md:block text-sm ml-1">
+                  {padZero(item.num)}&ensp;{item.title}
+                </span>
               </p>
             </div>
           );
@@ -122,19 +127,30 @@ function ProcessCom() {
       </div>
     );
   };
+
+  const carouselRef = useRef<any>();
+
+  //下一页
+  const handleNext = () => {
+    carouselRef.current?.next(); // 调用 Carousel 的 next 方法
+  };
+  //上一页
+  const handlePrev = () => {
+    carouselRef.current?.prev(); // 调用 Carousel 的 prev 方法
+  };
   return (
     <div>
       {/* //移动 */}
       <div className="md:hidden w-full m-auto p-4">
-        <h2 className="w-full h-10  flex justify-center items-center text-lg font-bold">
+        <h2 className="w-full h-10 text-center py-5 text-lg font-bold">
           招聘需求和公开招聘
         </h2>
         <div className="w-full m-auto h-auto">
           <Carousel>
             {swiperArrData.map((item, index) => {
               return (
-                <div className="flex">
-                  {renderCardItem(swiperArrData[index])}
+                <div key={index} className="flex">
+                  {renderCardItem(item)}
                 </div>
               );
             })}
@@ -142,14 +158,17 @@ function ProcessCom() {
         </div>
       </div>
       {/* //pc  平板 */}
-      <div className="hidden md:block w-[90%] h-auto m-auto xl:w-full xl:h-auto">
+      <div className="hidden relative md:block w-[90%] h-auto m-auto xl:w-full xl:h-auto">
         <Carousel
           dotPosition="right"
           infinite={false}
-          className=""
           dots={{ className: "slick-dots custom-dots" }}
           adaptiveHeight
+          draggable
+          ref={carouselRef}
+          className="relative"
         >
+          
           {content.swiper.map((item, index) => {
             return (
               <div
@@ -183,6 +202,12 @@ function ProcessCom() {
             );
           })}
         </Carousel>
+        <div className="cursor-pointer absolute top-[30%] right-0 z-10 " onClick={handlePrev}>
+            prev 
+          </div>
+          <div className="cursor-pointer absolute top-[65%] right-0 z-10" onClick={handleNext} >
+            next 
+          </div>
       </div>
     </div>
   );

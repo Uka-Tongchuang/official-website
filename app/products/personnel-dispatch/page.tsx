@@ -3,7 +3,7 @@ import React from "react";
 //component
 import BannerCom from "@/components/banner/BannerCom";
 import CardCom from "@/components/personnelCard/perCardCom";
-import ServerCom from "@/components/personnelCard/ServerCom";
+import ServerCom from "@/components/personnelCard/ServiceCom";
 import FlowPathCom from "@/components/personnelCard/flowPath";
 //img
 import { bannerBg } from "@/public/renshi";

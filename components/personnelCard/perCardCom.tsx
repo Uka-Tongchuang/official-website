@@ -27,10 +27,10 @@ function perCardCom() {
             key={index}
             className="xl:relative flex flex-col-reverse justify-around items-center h-24 p-8 md:items-start md:p-4 md:w-full md:h-60 md:flex-col xl:flex-col xl:w-full xl:h-72 bg-gradient-to-b from-white to-[#fff] xl:p-8"
           >
-            <h4 className="text-ccc text-sm md:text-black font-bold  md:text-lg xl:text-lg">
+            <h4 className="text-ironside-grey text-sm md:text-black font-bold  md:text-lg xl:text-lg">
               {item.title}
             </h4>
-            <p className="hidden md:pt-8 md:block xl:pt-2 xl:mb-32 text-sm text-ccc w-[60%] h-10 mt-10 md:text-md">
+            <p className="hidden md:pt-8 md:block xl:pt-2 xl:mb-32 text-sm text-ironside-grey w-[60%] h-10 mt-10 md:text-md">
               {item.en}
             </p>
             <Image

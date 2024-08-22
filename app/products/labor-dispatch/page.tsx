@@ -6,7 +6,7 @@ import LaborImg from "@/public/labor/Group.png";
 import BannerCom from "@/components/banner/BannerCom";
 import ProcessCom from "@/components/labor/ProcessCom";
 import CardCom from "@/components/labor/CardCom";
-import ServerCom from "@/components/labor/ServerCom";
+import ServerCom from "@/components/labor/ServiceCom";
 import AdvantageCom from "@/components/labor/AdvantageCom";
 // img
 import { bg } from "@/public/labor";

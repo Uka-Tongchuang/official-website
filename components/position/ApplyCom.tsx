@@ -13,7 +13,7 @@ function ApplyCom() {
         <h3 className="w-full my-5 text-center text-lg font-bold text-title-text-color">
           适用场景
         </h3>
-        <div className="flex justify-around items-center w-[95%] m-auto h-auto bg-app-bg rounded-xl p-1 mb-2">
+        <div className="flex justify-around items-center w-[95%] m-auto h-auto bg-a-color rounded-xl p-1 mb-2">
           <div className="flex flex-col justify-between">
             <div>
               <Applys arr={appdata.appli.first} />

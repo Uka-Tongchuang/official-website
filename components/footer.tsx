@@ -170,7 +170,7 @@ export default function Footer(): JSX.Element {
         {/* 加入我们 */}
         <div className="relative">
           <Image className="w-full" src={BgFooterImage} alt="" />
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
+          <div className="w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
             <p className="text-3xl">
               已为超过<span className="text-azul">4,600</span>{" "}
               家企业提供服务，服务人数超过<span className="text-azul">50W+</span>

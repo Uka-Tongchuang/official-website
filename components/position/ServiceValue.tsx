@@ -24,11 +24,11 @@ function ServiceValue() {
                       index === 0
                         ? "bg-circle-bg shadow-[0px_4px_6px_-4px_rgba(255,182,193,0.5)]"
                         : index === 1
-                        ? "bg-card-bg shadow-[0px_4px_6px_-4px_rgba(173,216,230,0.5)]"
+                        ? "bg-a-color shadow-[0px_4px_6px_-4px_rgba(173,216,230,0.5)]"
                         : index === 2
                         ? "bg-card-a-bg shadow-[0px_4px_6px_-4px_rgba(144,238,144,0.5)]"
                         : index === 3
-                        ? "bg-card-d-bg shadow-[0px_4px_6px_-4px_rgba(255,239,213,0.5)]"
+                        ? "bg-dashed-color shadow-[0px_4px_6px_-4px_rgba(255,239,213,0.5)]"
                         : ""
                     }`}
             >
@@ -67,13 +67,13 @@ function ServiceValue() {
                 }`}
               >
                 <li className="relative pl-4 xl:mt-8 before:content-[''] before:w-2 before:h-2 before:bg-current before:rounded-full before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2">
-                  <span className="text-ccc text-md xl:text-lg">{item.desca}</span>
+                  <span className="text-ironside-grey text-md xl:text-lg">{item.desca}</span>
                 </li>
                 <li className="relative my-2 md:my-4 xl:my-8 2xl:my-12 pl-4 before:content-[''] before:w-2 before:h-2 before:bg-current before:rounded-full before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2">
-                  <span className="text-ccc text-md xl:text-lg">{item.descb}</span>
+                  <span className="text-ironside-grey text-md xl:text-lg">{item.descb}</span>
                 </li>
                 <li className="relative my-2 2xl:mb-6 pl-4 before:content-[''] before:w-2 before:h-2 before:bg-current before:rounded-full before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2">
-                  <span className="text-ccc text-md xl:text-lg">{item.descc}</span>
+                  <span className="text-ironside-grey text-md xl:text-lg">{item.descc}</span>
                 </li>
               </ul>
             </div>

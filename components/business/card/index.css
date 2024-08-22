@@ -1,0 +1,12 @@
+.clip-path-triangle::before {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.clip-path-triangle-right::before{
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+.clip-path-triangle-left-bottom::before{
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+.clip-path-triangle-right-bottom::before{
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+}

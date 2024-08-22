@@ -5,20 +5,28 @@ import content from "./position.json";
 import Card from "./cards/CardsCom";
 //imgs
 import { iconA, iconB, iconC, iconD } from "@/public/position";
+import { StaticImageData } from "next/image";
 function ServerCom() {
   const imgs = [iconA, iconB, iconC, iconD];
+  const renderCard=(title:string, img:StaticImageData, msg:string): JSX.Element => {
+    return (
+      <div className="flex justify-center w-full">
+                <Card
+                  title={title}
+                  img={img}
+                  msg={msg}
+                />
+              </div>
+    )
+  }
   return (
     <div className="w-full md:w-[70%] md:m-auto">
+      <h3 className="md:hidden w-full h-14 py-4  text-center text-lg font-bold text-title-text-color">
+        服务内容
+      </h3>
       <div className="md:hidden w-[90%] m-auto bg-a-color rounded-xl flex flex-col justify-between px-4 pb-4">
         {content.contentservice.map((item, index) => {
-          return (
-            <Card
-              key={index}
-              title={item.title}
-              img={imgs[index]}
-              msg={item.msg}
-            />
-          );
+          return renderCard(item.title,imgs[index],item.msg)
         })}
       </div>
       {/* //md xl */}
@@ -26,7 +34,7 @@ function ServerCom() {
         <h3 className="w-full my-10 text-center text-lg xl:text-3xl font-bold text-title-text-color">
           服务内容
         </h3>
-        <div className="w-full h-full flex justify-around items-center bg-app-bg rounded-xl p-1 mb-2">
+        <div className="w-full h-full flex justify-around items-center rounded-xl p-1 mb-2">
           <div className="w-[40%] flex flex-col items-center">
             <div className="flex justify-center w-full">
               <Card
