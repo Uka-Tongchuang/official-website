@@ -3,8 +3,11 @@ import React from "react";
 import content from "./business.json";
 // img
 import Image from "next/image";
+
+// css
+import "./service.css"
 //imgs 
-import { contentImg } from "@/public/business";
+import { contentImg,conbg } from "@/public/business";
 // com
 import LeftCard from "./card/LeftCard";
 import LeftBottomCard from "./card/LeftBottomCard"
@@ -48,10 +51,11 @@ function ServiceCom() {
       </div>
       {/* md pc */}
       <div className="hidden md:block md:text-lg">
+       
         <h3 className="h-14 xl:text-3xl flex my-4 justify-center items-center font-bold">
           服务内容
         </h3>
-        <div className="relative w-full h-[40rem] bg-gradient-to-r from-white to-a-color">
+        <div className="con-pc relative w-full h-[40rem] bg-gradient-to-r from-white to-a-color">
           {/* //圆形 */}
           <div className="absolute flex justify-center items-center w-[30rem] h-[30rem] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] rounded-full border-[8px] border-a-color">
             <div className="w-[26rem] h-[26rem] flex justify-center items-center border-2 border-dashed border-dashed-color rounded-full">

@@ -34,7 +34,8 @@ const config: Config = {
         "card-d-t":"#62DDE9",
         "g-color":"#333333",
         "lg-bg":"#CDE2FF",
-        "dashed-color":"#D7F0FF"
+        "dashed-color":"#E9FAFC",
+        "red-color":"#FFF6F5"
       },
       fontSize:{
         ssm:"8px",

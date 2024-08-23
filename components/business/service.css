@@ -1,0 +1,10 @@
+.con-pc{
+    background-image: url("../../public/business/con-bg.png");
+    background-size: 100% 100%;
+}
+.tab_box {
+    background-image: url("../../public/business/bg-tab.png");
+    background-size: 40% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}

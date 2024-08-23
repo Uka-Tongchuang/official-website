@@ -13,7 +13,12 @@ function Process() {
     return arr.map((item: string, index: number) => {
       return (
         <div key={index} className=" relative mt-[13%] pl-12 xl:pl-2 2xl:pl-6">
-          <div className="w-8 h-[1px] absolute left-[1rem] xl:left-[-1.5rem] top-[0.5rem] xl:top-[0.6rem] bg-gradient-to-r from-azul to-white before:absolute before:w-2 before:h-2 before:border-[2px] before:top-[-3px] before:left-[-6px] before:border-azul before:rounded-full"></div>
+          <div className="
+          w-8 h-[1px] 
+          absolute left-[1rem] xl:left-[-1.5rem] top-[0.5rem] xl:top-[0.6rem] bg-gradient-to-r from-azul to-white 
+          before:absolute before:w-2 before:h-2 before:border-[2px] before:top-[-3px] before:left-[-6px] before:border-azul before:rounded-full
+          ">
+          </div>
           <div >{item}</div>
         </div>
       );

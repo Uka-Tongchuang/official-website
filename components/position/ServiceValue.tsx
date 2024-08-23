@@ -24,7 +24,7 @@ function ServiceValue() {
                       index === 0
                         ? "bg-circle-bg shadow-[0px_4px_6px_-4px_rgba(255,182,193,0.5)]"
                         : index === 1
-                        ? "bg-a-color shadow-[0px_4px_6px_-4px_rgba(173,216,230,0.5)]"
+                        ? "bg-red-color shadow-[0px_4px_6px_-4px_rgba(173,216,230,0.5)]"
                         : index === 2
                         ? "bg-card-a-bg shadow-[0px_4px_6px_-4px_rgba(144,238,144,0.5)]"
                         : index === 3

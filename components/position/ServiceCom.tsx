@@ -37,29 +37,24 @@ function ServerCom() {
         <div className="w-full h-full flex justify-around items-center rounded-xl p-1 mb-2">
           <div className="w-[40%] flex flex-col items-center">
             <div className="flex justify-center w-full">
-              <Card
-                title={content.contentservice[0].title}
-                img={imgs[0]}
-                msg={content.contentservice[0].msg}
-              />
+              {
+                renderCard(content.contentservice[0].title,imgs[0],content.contentservice[0].msg)
+              }
+
             </div>
             <div className="bg-app-hr h-[1px] w-[94%] my-4"></div>
             <div className="flex justify-center w-full">
-              <Card
-                title={content.contentservice[2].title}
-                img={imgs[2]}
-                msg={content.contentservice[2].msg}
-              />
+               {
+                renderCard(content.contentservice[2].title,imgs[2],content.contentservice[2].msg)
+              }
             </div>
           </div>
           <div className="bg-app-hr w-[1px] h-32 m-4"></div>
           <div className="w-[40%] flex flex-col items-center">
             <div className="flex justify-center w-full">
-              <Card
-                title={content.contentservice[1].title}
-                img={imgs[1]}
-                msg={content.contentservice[1].msg}
-              />
+               {
+                renderCard(content.contentservice[1].title,imgs[1],content.contentservice[1].msg)
+              }
             </div>
             <div className="bg-app-hr h-[1px] w-[94%] my-4"></div>
             <div className="flex justify-center w-full">

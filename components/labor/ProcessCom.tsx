@@ -1,6 +1,8 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
+// icon
+import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 //ui库
 import { Carousel } from "antd";
 // img
@@ -93,7 +95,6 @@ function ProcessCom() {
 
   //renderCard
   const renderCardItem = (arr: swiperArr) => {
-    
     return (
       <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-40 items-center justify-between">
         {arr.map((item: swiperItm, index) => {
@@ -158,7 +159,7 @@ function ProcessCom() {
         </div>
       </div>
       {/* //pc  平板 */}
-      <div className="hidden relative md:block w-[90%] h-auto m-auto xl:w-full xl:h-auto">
+      <div className="hidden relative md:block w-[90%] h-auto m-auto xl:w-[90%] xl:h-auto">
         <Carousel
           dotPosition="right"
           infinite={false}
@@ -168,7 +169,6 @@ function ProcessCom() {
           ref={carouselRef}
           className="relative"
         >
-          
           {content.swiper.map((item, index) => {
             return (
               <div
@@ -202,12 +202,18 @@ function ProcessCom() {
             );
           })}
         </Carousel>
-        <div className="cursor-pointer absolute top-[30%] right-0 z-10 " onClick={handlePrev}>
-            prev 
-          </div>
-          <div className="cursor-pointer absolute top-[65%] right-0 z-10" onClick={handleNext} >
-            next 
-          </div>
+        <div
+          className="cursor-pointer absolute top-[30%] right-1 z-10 "
+          onClick={handlePrev}
+        >
+          <ArrowUpOutlined className="text-xl text-slate-400"/>
+        </div>
+        <div
+          className="cursor-pointer absolute top-[65%] right-1 z-10"
+          onClick={handleNext}
+        >
+          <ArrowDownOutlined className="text-xl text-slate-400"/>
+        </div>
       </div>
     </div>
   );
