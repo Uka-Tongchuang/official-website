@@ -55,11 +55,11 @@ export default function Footer(): JSX.Element {
                   }`}
                 >
                   <a
-                    href="/products/personnel-dispatch"
+                    href="/products/personnel-management"
                     id="personnel"
                     className="w-full text-lg border-b text-gray-500 pl-[36px] border-slate-300 flex px-4 py-4 bg-white"
                   >
-                    人事派遣
+                    人事管理
                   </a>
                   <a
                     href="/products/labor-dispatch"

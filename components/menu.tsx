@@ -22,8 +22,8 @@ export default function Menu(): JSX.Element {
       pageTitle: "产品服务",
       subItem: [
         {
-          pageTitle: "人事派遣",
-          path: "/products/personnel-dispatch",
+          pageTitle: "人事管理",
+          path: "/products/personnel-management",
           id: "personnel",
         },
         {
