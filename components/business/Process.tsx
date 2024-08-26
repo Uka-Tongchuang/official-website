@@ -27,7 +27,7 @@ function Process() {
   return (
     <div className="">
       {/* //移动  */}
-      <div className="relative md:hidden bg-gradient-to-b from-white to-a-color pb-4">
+      <div className="relative overflow-x-hidden overflow-y-hidden md:hidden bg-gradient-to-b from-white to-a-color pb-4">
         <Image
           className="absolute w-28 bottom-[-8%] right-[-8%]"
           src={lBg}

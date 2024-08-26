@@ -1,0 +1,16 @@
+/* 默认的 Carousel 圆点样式为灰色 */
+.ant-carousel .slick-dots li button {
+    background: #aaa9a9; /* 默认灰色 */
+    transition: background 0.3s ease;
+}
+ul{
+    background-color: #fff!important;
+    top:384px
+}
+.ant-carousel .slick-dots li.slick-active button {
+    background: #165CFF; /* 激活状态的颜色 */
+}
+
+.ant-carousel .slick-dots li:hover button {
+    background: #165CFF; /* 划过时的高亮颜色 */
+}

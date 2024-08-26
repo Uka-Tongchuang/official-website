@@ -126,12 +126,12 @@ export default function Menu(): JSX.Element {
     if (expanded) {
       return (
         <div className="border-y border-gray-200 w-screen bg-white">
-          <ul className="flex flex-row w-full  justify-between items-center">
+          <ul className="flex flex-row w-full   justify-between items-center">
             {subItem.map((item, index) => (
               <li key={index}>
                 <a href={item.path} id={item.id}>
                   <button
-                    className={`h-full px-5 py-2 hover:text-azul ${
+                    className={`h-full px-5 py-4 hover:text-azul ${
                       currentPath === item.path
                         ? "border-b-2 border-azul"
                         : "border-none"
@@ -266,7 +266,7 @@ export default function Menu(): JSX.Element {
                   {menuItem.subItem ? (
                     <button
                       className={`inline-flex w-full justify-center items-center h-full px-5 py-2 hover:text-azul ${
-                        expanded ? "bg-azul/50 text-white " : "bg-transparent"
+                        expanded ? "" : "bg-transparent"
                       }`}
                       onClick={() => {
                         expandOnClick(menuItem.subItem);

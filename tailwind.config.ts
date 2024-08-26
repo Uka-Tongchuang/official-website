@@ -35,7 +35,8 @@ const config: Config = {
         "g-color":"#333333",
         "lg-bg":"#CDE2FF",
         "dashed-color":"#E9FAFC",
-        "red-color":"#FFF6F5"
+        "red-color":"#FFF6F5",
+        "a":"#ECF4FF"
       },
       fontSize:{
         ssm:"8px",

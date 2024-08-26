@@ -16,6 +16,7 @@ import consM from "./cons-m.png";
 import consN from "./cons-n.png";
 import consX from "./cons-x.png";
 import consY from "./cons-y.png";
+import conAa from "./cons-aa.png"
 
 //服务优势
 import sA from "./s-a.png"
@@ -50,7 +51,8 @@ export {
   sD,
   sE,
   sF,
-  valueBg
+  valueBg,
+  conAa
    // Export each of the consequences images as their respective variable name
   // Export the ban image as "ban"
 };

@@ -1,10 +1,19 @@
 import React from "react";
 // json
 import content from "./recruitment.json";
-// ims 
+import "./index.css";
+// ims
 import Image from "next/image";
 import { valueBg } from "@/public/recruitment";
 
+const renderCard = ({ title, msg }: { title: string; msg: string }) => {
+  return (
+    <div className="p-4 px-6">
+      <h3 className="text-lg xl:text-xl font-bold py-2">{title}</h3>
+      <p className="text-ironside-grey text-md xl:text-lg py-1">{msg}</p>
+    </div>
+  );
+};
 function ServiceValue() {
   return (
     <div>
@@ -24,7 +33,28 @@ function ServiceValue() {
             );
           })}
         </div>
-        <Image className="w-20  absolute bottom-0 right-0" src={valueBg} alt=""/>
+        <Image
+          className="w-20  absolute bottom-0 right-0"
+          src={valueBg}
+          alt=""
+        />
+      </div>
+      {/* //pc  */}
+      <div className="hidden md:block w-full h-auto mb-10 pt-10">
+        <div className="box w-[80%] h-auto bg-a-color rounded-2xl mt-10 m-auto py-10">
+          <h3 className="mt-10 text-lg xl:text-3xl font-bold text-center">
+            服务价值
+          </h3>
+          <div className="w-[80%] m-auto mt-10 grid grid-cols-2 gap-8">
+            {content.service.map((item, index) => {
+              return (
+                <div key={index} className="bg-white/70 rounded-xl opacity-90 backdrop-blur-lg">
+                  {renderCard(item)}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

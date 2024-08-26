@@ -28,7 +28,7 @@ function Benefits() {
       return (
         <div
           key={index}
-          className={` relative w-[96%] h-[20%] rounded-md flex justify-center items-center md:text-lg xl:text-xl 2xl:text-2xl ${cardindex === index ? "bg-azul  text-white" : "bg-white "}`}
+          className={` relative w-32 xl:w-36 h-[20%] rounded-md flex justify-center items-center md:text-lg xl:text-xl 2xl:text-2xl ${cardindex === index ? "bg-azul  text-white" : "bg-white "}`}
           onClick={() => {
             setCardData(arr[index]);
             setCardindex(index);
@@ -45,17 +45,15 @@ function Benefits() {
   //card render
   const cardRender = (item: objType) => {
     return (
-      <div className="flex">
+      <div className="flex items-center">
         {/* img box */}
-        <div className="w-80 flex justify-center items-center mx-10">
-          <Image className="object-contain" src={imgsTab[cardindex]} alt={item.dtitle} />
-        </div>
+        <Image className="w-44 h-44 xl:w-60 xl:h-60 mx-4 xl:mx-12" src={imgsTab[cardindex]} alt={item.dtitle} />
         {/* title and msg box */}
-        <div className="p-16">
-          <h3 className="mb-20 font-bold text-xl">{item.dtitle}</h3>
-          <p className="mb-6">{item.desca}</p>
-          <p className="mb-6">{item.descb}</p>
-          <p className="mb-6">{item.descc ? item.descc : ""}</p>
+        <div className="p-8 h-full">
+          <h3 className="mb-10 xl:mb-20 font-bold text-lg xl:text-xl">{item.dtitle}</h3>
+          <p className="mb-6 text-md text-ironside-grey xl:text-lg">{item.desca}</p>
+          <p className="mb-6 text-md text-ironside-grey xl:text-lg">{item.descb}</p>
+          <p className="mb-6 text-md text-ironside-grey xl:text-lg">{item.descc ? item.descc : ""}</p>
           <p></p>
         </div>
       </div>
@@ -84,14 +82,14 @@ function Benefits() {
         })}
       </div>
       {/* //md xl/ */}
-      <div className="hidden md:block h-[40rem] bg-gradient-to-b from-a-color to-circle-bg">
+      <div className="hidden md:block tabbox h-[40rem] bg-gradient-to-b from-a-color to-circle-bg">
         <h3 className="text-center h-14 font-bold text-lg xl:text-3xl py-10">
           服务优势
         </h3>
-        <div className="tab_box h-[95%] flex">
-          <div className="w-[54%] m-auto h-[70%] flex mt-18">
+        <div className="h-[95%] flex">
+          <div className=" w-[80%] xl:w-[70%] m-auto h-[70%] flex mt-18">
             {/* tab  */}
-            <div className="w-[20%] flex flex-col justify-between items-center">
+            <div className="w-32 flex flex-col justify-between items-center">
               {tabRender(content.tablist)}
             </div>
             {/* card  */}

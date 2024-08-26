@@ -10,7 +10,7 @@ function ServerCom() {
   const imgs = [iconA, iconB, iconC, iconD];
   const renderCard=(title:string, img:StaticImageData, msg:string): JSX.Element => {
     return (
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center w-full h-full">
                 <Card
                   title={title}
                   img={img}
