@@ -7,7 +7,12 @@ const BubbleChartComponent = ({ obj }: any) => {
         graph={{
           zoom: 1,
           offsetX: 0,  // 使用数字类型
-          offsetY: 0,   // 使用数字类型
+          offsetY: 0, 
+          
+          
+          
+          
+          // 使用数字类型
         }}
         padding={2}
         showLegend={false}

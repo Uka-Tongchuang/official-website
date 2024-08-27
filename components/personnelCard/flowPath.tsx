@@ -13,7 +13,7 @@ function flowPath() {
     { image: flowFour, title: "多元化解决方案" },
   ];
   //render
-   const renderCom = (img: StaticImageData, title: string): JSX.Element => {
+  const renderCom = (img: StaticImageData, title: string): JSX.Element => {
     return (
       <div className="h-[49%] flex  justify-between items-center">
         <Image className="w-32 h-32" loading="lazy" src={img} alt="" />

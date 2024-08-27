@@ -13,22 +13,34 @@ function ServiceCom() {
     return (
       <div className="">
         <div className="w-[100%] flex p-10 justify-around items-center bg-a-color mb-10">
-          <Image className="w-[40%] 3xl:w-96 xl:ml-[5%]" src={item.imgA} alt="" />
+          <Image
+            className="w-[40%] 3xl:w-96 xl:ml-[5%]"
+            src={item.imgA}
+            alt=""
+          />
           <div className="xl:ml-[10%] text-ironside-grey">
-            <h3 className="pb-10 font-bold text-xl text-azul">{item.cardF.title}</h3>
+            <h3 className="pb-10 font-bold text-xl text-azul">
+              {item.cardF.title}
+            </h3>
             <p>{item.cardF.msgA}</p>
             <p className="py-6">{item.cardF.msgB}</p>
             <p>{item.cardF.msgC}</p>
           </div>
         </div>
         <div className="w-full flex p-10 justify-around items-center bg-a-color mb-10">
-          <div  className="xl:ml-[5%] text-ironside-grey">
-          <h3 className="pb-12 font-bold text-xl text-azul">{item.cardS.title}</h3>
+          <div className="xl:ml-[5%] text-ironside-grey">
+            <h3 className="pb-12 font-bold text-xl text-azul">
+              {item.cardS.title}
+            </h3>
             <p>{item.cardS.msgA}</p>
             <p className="py-6">{item.cardS.msgB}</p>
             <p>{item.cardS.msgC}</p>
           </div>
-          <Image className="w-[40%] 3xl:w-96 xl:ml-[10%]" src={item.imgB} alt="" />
+          <Image
+            className="w-[40%] 3xl:w-96 xl:ml-[10%]"
+            src={item.imgB}
+            alt=""
+          />
         </div>
         <div className="clear-both"></div>
       </div>
@@ -80,6 +92,9 @@ function ServiceCom() {
         })}
       </div>
       <div className="hidden md:block w-[75%] m-auto">
+        <h3 className="mt-10 text-lg my-10 xl:text-3xl font-bold text-center">
+          服务优势
+        </h3>
         {cardArr.map((item, index) => {
           return cardrender(item);
         })}

@@ -1,12 +1,23 @@
 import React from 'react'
 
+import "./index.css"
 // json 
 import content from "./advantage.json"
 import Image from 'next/image';
 import { valueBg } from '@/public/flexiblePage';
+
+const renderCard = ({ title, msg }: { title: string; msg: string }) => {
+  return (
+    <div className="p-4 px-6">
+      <h3 className="text-lg xl:text-xl font-bold py-2">{title}</h3>
+      <p className="text-ironside-grey text-md xl:text-lg py-1">{msg}</p>
+    </div>
+  );
+};
 function ServiceValue() {
   return (
-    <div className=" relative md:hidden w-[90%] m-auto rounded-xl mb-10">
+    <div>
+      <div className=" relative md:hidden w-[90%] m-auto rounded-xl mb-10">
         <h3 className="flex justify-center items-center font-bold mb-4">
           服务价值
         </h3>
@@ -28,6 +39,28 @@ function ServiceValue() {
           alt=""
         />
       </div>
+      {/* //pc  */}
+      <div className='hidden md:block'>
+          {/* //pc  */}
+      <div className="hidden md:block w-full h-auto mb-10 pt-10">
+        <div className="aa w-[80%] h-auto bg-a-color rounded-2xl mt-10 m-auto py-10">
+          <h3 className="mt-10 text-lg xl:text-3xl font-bold text-center">
+            服务价值
+          </h3>
+          <div className="w-[80%] m-auto mt-10 grid grid-cols-2 gap-8">
+            {content.service.map((item, index) => {
+              return (
+                <div key={index} className="bg-white/70 rounded-xl opacity-90 backdrop-blur-lg">
+                  {renderCard(item)}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
   )
 }
 

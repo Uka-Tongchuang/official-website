@@ -1,6 +1,8 @@
 
 
-
+.slick-dots,.slick-dots-bottom {
+    top: 230px;
+}
 /* 默认的 Carousel 圆点样式为灰色 */
 .ant-carousel .slick-dots li button {
     background: #aaa9a9; /* 默认灰色 */

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 // json
 import content from "./recruitment.json";
@@ -6,9 +6,9 @@ import content from "./recruitment.json";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 
-import "./index.css"
-//icon 
-import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons"; 
+import "./index.css";
+//icon
+import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 
 import { Carousel } from "antd";
 // imgs
@@ -29,159 +29,158 @@ import {
   consN,
   consX,
   consY,
-  conAa
+  conAa,
 } from "@/public/recruitment/index";
 
 function SwiperCom() {
+  //补0函数
+  const padZero = (num: number): string => {
+    return num < 10 ? `0${num}` : `${num}`;
+  };
+  const swiperArrData = [
+    {
+      title: content.swiper[0].title,
+      msg: content.swiper[0].msg,
+      arr: [
+        {
+          img: consA,
+          title: content.swiperdata[0][0],
+          num: 1,
+        },
+        {
+          img: consB,
+          title: content.swiperdata[0][1],
+          num: 2,
+        },
+        {
+          img: consC,
+          title: content.swiperdata[0][2],
+          num: 3,
+        },
+        {
+          img: consD,
+          title: content.swiperdata[0][3],
+          num: 4,
+        },
+      ],
+    },
+    {
+      title: content.swiper[1].title,
+      msg: content.swiper[1].msg,
+      arr: [
+        {
+          img: consE,
+          title: content.swiperdata[1][0],
+          num: 5,
+        },
+        {
+          img: consF,
+          title: content.swiperdata[1][1],
+          num: 6,
+        },
+        {
+          img: consG,
+          title: content.swiperdata[1][2],
+          num: 7,
+        },
+        {
+          img: consH,
+          title: content.swiperdata[1][3],
+          num: 8,
+        },
+      ],
+    },
+    {
+      title: content.swiper[2].title,
+      msg: content.swiper[2].msg,
+      arr: [
+        {
+          img: consI,
+          title: content.swiperdata[2][0],
+          num: 9,
+        },
+        {
+          img: consJ,
+          title: content.swiperdata[2][1],
+          num: 10,
+        },
+        {
+          img: consK,
+          title: content.swiperdata[2][2],
+          num: 11,
+        },
+        {
+          img: consL,
+          title: content.swiperdata[2][3],
+          num: 12,
+        },
+      ],
+    },
+    {
+      title: content.swiper[3].title,
+      msg: content.swiper[3].msg,
+      arr: [
+        {
+          img: consM,
+          title: content.swiperdata[3][0],
+          num: 13,
+        },
+        {
+          img: consN,
+          title: content.swiperdata[3][1],
+          num: 14,
+        },
+        {
+          img: consX,
+          title: content.swiperdata[3][2],
+          num: 15,
+        },
+        {
+          img: consY,
+          title: content.swiperdata[3][3],
+          num: 16,
+        },
+        {
+          img: conAa,
+          title: content.titlelast,
+          num: 17,
+        },
+      ],
+    },
+  ];
+  //小卡片
+  const cartRender = (title: string, img: StaticImageData, num: number) => {
+    return (
+      <div className="w-full h-full flex flex-col p-2 ml-3 justify-center ">
+        <Image className="w-8 h-8 mb-4" src={img} alt="" />
+        <li className="flex items-center relative before:w-1 before:h-1 before:rounded-full before:bg-azul before:absolute before:left-[-10px]">
+          <span className="text-lg ">{padZero(num)} </span>
+          <span className="ml-2">{title}</span>
+        </li>
+      </div>
+    );
+  };
 
-  
-//补0函数
-const padZero = (num: number): string => {
-  return num < 10 ? `0${num}` : `${num}`;
-};
-const swiperArrData = [
-  {
-    title: content.swiper[0].title,
-    msg: content.swiper[0].msg,
-    arr: [
-      {
-        img: consA,
-        title: content.swiperdata[0][0],
-        num: 1,
-      },
-      {
-        img: consB,
-        title: content.swiperdata[0][1],
-        num: 2,
-      },
-      {
-        img: consC,
-        title: content.swiperdata[0][2],
-        num: 3,
-      },
-      {
-        img: consD,
-        title: content.swiperdata[0][3],
-        num: 4,
-      },
-    ],
-  },
-  {
-    title: content.swiper[1].title,
-    msg: content.swiper[1].msg,
-    arr: [
-      {
-        img: consE,
-        title: content.swiperdata[1][0],
-        num: 5,
-      },
-      {
-        img: consF,
-        title: content.swiperdata[1][1],
-        num: 6,
-      },
-      {
-        img: consG,
-        title: content.swiperdata[1][2],
-        num: 7,
-      },
-      {
-        img: consH,
-        title: content.swiperdata[1][3],
-        num: 8,
-      },
-    ],
-  },
-  {
-    title: content.swiper[2].title,
-    msg: content.swiper[2].msg,
-    arr: [
-      {
-        img: consI,
-        title: content.swiperdata[2][0],
-        num: 9,
-      },
-      {
-        img: consJ,
-        title: content.swiperdata[2][1],
-        num: 10,
-      },
-      {
-        img: consK,
-        title: content.swiperdata[2][2],
-        num: 11,
-      },
-      {
-        img: consL,
-        title: content.swiperdata[2][3],
-        num: 12,
-      },
-    ],
-  },
-  {
-    title: content.swiper[3].title,
-    msg: content.swiper[3].msg,
-    arr: [
-      {
-        img: consM,
-        title: content.swiperdata[3][0],
-        num: 13,
-      },
-      {
-        img: consN,
-        title: content.swiperdata[3][1],
-        num: 14,
-      },
-      {
-        img: consX,
-        title: content.swiperdata[3][2],
-        num: 15,
-      },
-      {
-        img: consY,
-        title: content.swiperdata[3][3],
-        num: 16,
-      },
-      {
-        img: conAa,
-        title: content.titlelast,
-        num: 17,
-      },
-    ],
-  },
-];
-//小卡片
-const cartRender = (title: string, img: StaticImageData, num: number) => {
-  return (
-    <div className="w-full h-full flex flex-col  p-2">
-      <Image className="w-8 h-8" src={img} alt="" />
-      <li className="mt-4 flex">
-        {" "}
-        <span>{padZero(num)} </span> <span className="ml-2">{title}</span>{" "}
-      </li>
-    </div>
-  );
-};
   //renderCard
   const renderCardItem = (arr: any) => {
     return (
-      <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-52 items-center">
-        <div className="w-[50%] h-full flex flex-col items-center justify-around">
-          <div className="h-full">
+      <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-52 justify-between">
+        <div className="w-[48%] h-full flex flex-col justify-around">
+          <div className="h-[calc(50%-1px)] flex justify-center">
             {cartRender(arr[0].title, arr[0].img, arr[0].num)}
           </div>
-          <div className="h-[1px] w-[60%] bg-gray-300"></div>
-          <div className="h-full">
+          <div className="h-[1px] w-[60%] bg-gray-300 mx-auto"></div>
+          <div className="h-[calc(50%-1px)] flex justify-center">
             {cartRender(arr[2].title, arr[2].img, arr[2].num)}
           </div>
         </div>
-        <div className="w-[1px] h-[60%] bg-gray-300"></div>
-        <div className="flex-1 h-full flex flex-col items-center justify-around">
-          <div className="h-full">
+        <div className="w-[1px] h-[60%] bg-gray-300 self-center"></div>
+        <div className="w-[48%] h-full flex flex-col justify-around">
+          <div className="h-[calc(50%-1px)] flex justify-center">
             {cartRender(arr[1].title, arr[1].img, arr[1].num)}
           </div>
-          <div className="h-[1px] w-[60%] bg-gray-300"></div>
-          <div className="h-full">
+          <div className="h-[1px] w-[60%] bg-gray-300 mx-auto"></div>
+          <div className="h-[calc(50%-1px)] flex justify-center">
             {cartRender(arr[3].title, arr[3].img, arr[3].num)}
           </div>
         </div>
@@ -189,22 +188,34 @@ const cartRender = (title: string, img: StaticImageData, num: number) => {
     );
   };
 
-  const renderCard=(arr:any)=>{
-    return <div className={ `w-full grid  gap-8 my-20 ${arr.length===4?"grid-cols-4":"grid-cols-5"}`}>
-      {
-        arr.map((item:{img:StaticImageData,title:string,num:number},index:number)=>{
-          return (
-            <div className=" bg-gradient-to-br from-a via-white to-a rounded-lg p-4">
-              <p className="text-azul text-xl">{padZero(item.num)}</p>
-              <p className="text-center my-4">{item.title}</p>
-              <Image  className="float-right w-7 xl:w-8" src={item.img} alt={item.title}/>
-              <p className="clear-both"></p>
-            </div>
-          )
-        })
-      }
-    </div>
-  }
+  const renderCard = (arr: any) => {
+    return (
+      <div
+        className={`w-full grid gap-8 my-20 ${
+          arr.length === 4 ? "grid-cols-4" : "grid-cols-5"
+        }`}
+      >
+        {arr.map(
+          (
+            item: { img: StaticImageData; title: string; num: number },
+            index: number
+          ) => {
+            return (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-a via-white to-a rounded-lg p-4 flex flex-col justify-between items-center"
+              >
+                <p className="text-azul text-xl">{padZero(item.num)}</p>
+                <p className="text-center my-4">{item.title}</p>
+                <Image className="w-7 xl:w-8" src={item.img} alt={item.title} />
+              </div>
+            );
+          }
+        )}
+      </div>
+    );
+  };
+
   const carouselRef = useRef<any>();
   //下一页
   const handleNext = () => {
@@ -217,8 +228,8 @@ const cartRender = (title: string, img: StaticImageData, num: number) => {
   return (
     <div>
       {/* //移动 */}
-      <div className="md:hidden w-full m-auto p-4">
-        <h2 className="w-full h-10 text-center py-5 text-lg font-bold">
+      <div className="md:hidden w-full m-auto p-4 mb-10">
+        <h2 className="w-full h-10 text-center py-5 mb-5 text-lg font-bold">
           招聘需求和公开招聘
         </h2>
         <div className="w-full m-auto h-auto">
@@ -234,7 +245,7 @@ const cartRender = (title: string, img: StaticImageData, num: number) => {
         </div>
       </div>
       {/* md xl */}
-      <div className="hidden relative md:block w-[90%] h-auto m-auto xl:w-[90%] xl:h-auto">
+      <div className="hidden relative md:block w-[90%] h-auto m-auto mb-10 xl:w-[90%] xl:h-auto">
         <Carousel
           dotPosition="right"
           infinite={false}
@@ -261,7 +272,7 @@ const cartRender = (title: string, img: StaticImageData, num: number) => {
                 </div>
                 {/* xia边卡片部分 */}
                 <div className="flex flex-col md:flex-row md:w-[85%] md:m-auto items-center">
-                    {renderCard(item.arr)}
+                  {renderCard(item.arr)}
                 </div>
               </div>
             );

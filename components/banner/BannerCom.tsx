@@ -4,11 +4,12 @@ import "./banner.css";
 import Image, { StaticImageData } from "next/image";
 type propsType = {
   title: string;
+  title2?:string;
   msg: string;
   img: StaticImageData | string; // 修改img属性类型;
 };
 
-const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
+const BannerCom = ({ title, title2,msg, img }: propsType): JSX.Element => {
   return (
     <div
       className={`w-full h-auto mt-[70px] text-title-text-color py-4 ${
@@ -19,8 +20,10 @@ const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
     >
       <div className="xl:w-[80%] md:w-[80%] h-auto m-auto  md:flex md:justify-between md:items-center">
         <div className="xl:w-[40%] md:w-full">
-          <h1 className="w-[80%] text-center md:text-left m-auto font-bold text-lg pt-2 h-10  md:text-3xl md:mb-[54px] xl:text-4xl xl:pb-12">
+          <h1 className="w-[44%] py-2 my-1 text-center md:text-left m-auto font-bold text-lg pt-2 h-10  md:text-3xl md:mb-[54px] xl:text-4xl xl:pb-12">
             {title}
+            <br/>
+            {title2}
           </h1>
           <p className="w-[80%] m-auto text-md text-ironside-grey xl:text-lg">
             {msg}
@@ -32,7 +35,11 @@ const BannerCom = ({ title, msg, img }: propsType): JSX.Element => {
           }`}
         >
           <Image
-            className="object-contain xl:p-10 md:p-4 md:mb-10"
+            className={`object-contain xl:p-10 md:p-4 md:mb-10 ${
+              title === "客户为先，诚信为本，"
+                ? "mt-10 p-8"
+                : ""
+            }`}
             src={img}
             alt=""
             loading="lazy"
