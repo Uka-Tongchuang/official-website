@@ -45,6 +45,121 @@
             "调酒师"
         ]
     },
+    "scenarioArr": [
+        {
+            "label": "行政文秘",
+            "icon": "circle big",
+            "line": "none",
+            "value": 15
+        },
+        {
+            "label": "电话客服",
+            "icon": "circle big",
+            "line": "none",
+            "value": 20
+        },
+        {
+            "label": "业务助理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 16
+        },
+        {
+            "label": "销售",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 16
+        },
+        {
+            "label": "线上客服",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 20
+        },
+        {
+            "label": "调酒师",
+            "icon": "circle",
+            "line": "none",
+            "value":20
+        },
+        {
+            "label": "办公室文员",
+            "icon": "circle",
+            "line": "none",
+            "value": 13
+        },
+        {
+            "label": "采购助理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 13
+        },
+        {
+            "label": "材料审核",
+            "icon": "circle",
+            "line": "none",
+            "value": 12
+        },
+        {
+            "label": "财务助理",
+            "icon": "circle",
+            "line": "none",
+            "value": 15
+        },
+        {
+            "label": "人事管理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 15
+        },
+        {
+            "label": "店长",
+            "icon": "circle",
+            "value": 10
+        },
+        {
+            "label": "服务员",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 12
+        },
+        {
+            "label": "店员",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 5
+        },
+        {
+            "label": "地推",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 10
+        },
+        {
+            "label": "理货",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 10
+        },
+        {
+            "label": "咖啡师",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 8
+        },
+        {
+            "label": "收银",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 6
+        },
+        {
+            "label": "关键词",
+            "icon": "KEYWORD",
+            "line": "dashed",
+            "value": 40
+        }
+    ],
     "scenearr": [
         {
             "label": "行政文秘",
