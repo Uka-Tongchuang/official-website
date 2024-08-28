@@ -1,0 +1,24 @@
+.first{
+    background-image: url("../../public/anout-us/c-bg-mf.png");
+    background-size: 100% 100%;
+}
+.second{
+    background-image: url("../../public/anout-us/c-bg-ms.png");
+    background-size: 100% 100%;
+}
+.third{
+    background-image: url("../../public/anout-us//c-bg-mt.png");
+    background-size: 100% 100%;
+}
+.first-pc{
+    background-image: url("../../public/anout-us/c-bg-pf.png");
+    background-size: 100% 100%;
+}
+.sec-pc{
+    background-image: url("../../public/anout-us/c-bg-b.png");
+    background-size: 100% 100%;
+}
+.third-pc{
+    background-image: url("../../public/anout-us/c-bg-t.png");
+    background-size: 100% 100%;
+}

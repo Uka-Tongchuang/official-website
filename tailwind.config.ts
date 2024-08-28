@@ -37,7 +37,10 @@ const config: Config = {
         "dashed-color":"#E9FAFC",
         "red-color":"#FFF6F5",
         "a":"#ECF4FF",
-        "about-color":"#333333"
+        "about-color":"#333333",
+        "form-bg-a":"#E0D8FE",
+        "to-bg-a":"#EFEEFF",
+        "icon-bg":"#FAFAFB"
       },
       fontSize:{
         ssm:"8px",
