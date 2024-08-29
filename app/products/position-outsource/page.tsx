@@ -4,8 +4,9 @@ import React from "react";
 import BannerCom from "@/components/banner/BannerCom";
 import ServiceCom from "@/components/position/ServiceCom";
 import ApplyCom from "@/components/position/ApplyCom";
+import ServicePro from "@/components/position/ServicePro";
 import ServiceValueCom from "@/components/position/ServiceValue";
-import BenefitsCom from "@/components/position/BenefitsCom"
+import BenefitsCom from "@/components/position/BenefitsCom";
 // img
 import { bgImg } from "@/public/position";
 function PositionOutsource() {
@@ -18,8 +19,9 @@ function PositionOutsource() {
       />
       <ServiceCom />
       <ApplyCom />
+      <ServicePro />
       <ServiceValueCom />
-    <BenefitsCom />
+      <BenefitsCom />
     </div>
   );
 }

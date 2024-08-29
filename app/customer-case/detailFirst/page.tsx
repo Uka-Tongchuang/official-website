@@ -13,12 +13,12 @@ function DetailPage() {
 
   // 确保 id 正确获取
   return (
-    <div className="mt-[70px]">
-      <Banner />
+    <div className="mt-[70px] md:bg-gradient-to-b from-white  via-white to-a-color">
+      <Banner id={1}/>
       <Card id={1} />
       <Problem id={1} />
       <Tactics id={1} />
-      <PayCom />
+      <PayCom id={1}/>
       <Cooperate />
       <Acc id={1}/>
     </div>

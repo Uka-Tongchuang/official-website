@@ -18,14 +18,14 @@ const BannerCom = ({ title, title2,msg, img }: propsType): JSX.Element => {
           : "bg-a-color"
       }`}
     >
-      <div className="xl:w-[80%] md:w-[80%] h-auto m-auto  md:flex md:justify-between md:items-center">
+      <div className="md:w-[80%] h-auto m-auto  md:flex md:justify-between md:items-center">
         <div className="xl:w-[40%] md:w-full">
           <h1 className="md:whitespace-nowrap py-2 my-1 text-center md:text-left m-auto font-bold text-lg pt-2 h-10  md:text-3xl md:mb-[54px] xl:text-4xl xl:pb-12">
             {title}
-            <br className="md:hidden"/>
+            <br className="xl:hidden"/>
             {title2}
           </h1>
-          <p className="w-[80%] m-auto text-md text-ironside-grey xl:text-lg">
+          <p className="w-[80%] m-auto md:w-full text-md text-ironside-grey xl:text-lg">
             {msg}
           </p>
         </div>
@@ -35,9 +35,9 @@ const BannerCom = ({ title, title2,msg, img }: propsType): JSX.Element => {
           }`}
         >
           <Image
-            className={`object-contain xl:p-10 md:p-4 md:mb-10 ${
+            className={`object-contain xl:p-10 md:p-8 md:mb-12 ${
               title === "客户为先，诚信为本，"
-                ? "mt-10 p-8"
+                ? "mt-10 p-8 xl:ml-[120%] 3xl:ml-[50%]"
                 : ""
             }`}
             src={img}

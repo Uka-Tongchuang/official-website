@@ -43,7 +43,7 @@ function ServiceValue() {
       <div className='hidden md:block'>
           {/* //pc  */}
       <div className="hidden md:block w-full h-auto mb-10 pt-10">
-        <div className="aa w-[80%] h-auto bg-a-color rounded-2xl mt-10 m-auto py-10">
+        <div className="w-[80%] relative h-auto bg-a-color rounded-2xl mt-10 m-auto py-10">
           <h3 className="mt-10 text-lg xl:text-3xl font-bold text-center">
             服务价值
           </h3>
@@ -55,6 +55,8 @@ function ServiceValue() {
                 </div>
               );
             })}
+          </div>
+          <div className='aa absolute bottom-0 right-0  w-36 h-36 xl:w-56 xl:h-56'>
           </div>
         </div>
       </div>

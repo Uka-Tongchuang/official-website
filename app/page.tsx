@@ -11,6 +11,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="z-10 w-full font-mono text-sm">
         <Banner />
+
         <AboutUs />
         <Services />
         <Partners />

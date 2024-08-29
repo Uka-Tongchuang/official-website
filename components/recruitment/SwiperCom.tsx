@@ -151,12 +151,15 @@ function SwiperCom() {
   //小卡片
   const cartRender = (title: string, img: StaticImageData, num: number) => {
     return (
-      <div className="w-full h-full flex flex-col p-2 ml-3 justify-center ">
+      <div className="w-full h-full flex flex-col ml-3 p-2">
         <Image className="w-8 h-8 mb-4" src={img} alt="" />
-        <li className="flex items-center relative before:w-1 before:h-1 before:rounded-full before:bg-azul before:absolute before:left-[-10px]">
-          <span className="text-lg ">{padZero(num)} </span>
-          <span className="ml-2">{title}</span>
-        </li>
+        <div className="flex w-full h-full">
+          <div className="flex h-full items-start">
+            <div className="flex bg-azul w-1 h-1 mt-[40%]  rounded-full float-left"></div>
+            <div className="text-md ml-[0.2rem]">{padZero(num)}</div>
+          </div>
+          <div className="ml-2 flex h-full items-start text-sm">{title}</div>
+        </div>
       </div>
     );
   };

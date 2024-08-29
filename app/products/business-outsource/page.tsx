@@ -7,7 +7,7 @@ import ProcessCom from "@/components/business/Process";
 import BenefitsCom from "@/components/business/Benefits";
 // img
 import { bgBan } from "@/public/business";
-function businessPage() {
+function BusinessPage() {
   return (
     <div className="">
       <BannerCom
@@ -22,4 +22,4 @@ function businessPage() {
   );
 }
 
-export default businessPage;
+export default BusinessPage;

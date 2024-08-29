@@ -19,10 +19,9 @@
 .boxss{
         background-image:
             /* 渐变色 */
-            url("../../public/recruitment/value-bg.png");
+            url("../../public/recruitment/value-bg-pc.png");
             background-size: 20% 50%;
             background-position: bottom right;
             /* 将图片移动到右下角 */
             background-repeat: no-repeat;
-            background-blend-mode: normal, multiply;
 }

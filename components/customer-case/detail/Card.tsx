@@ -17,7 +17,8 @@ const renderImg=(id:number):StaticImageData=>{
 }
 function Card({id}:{id:number}) {
   return (
-    <div className="mt-[-110px] mb-10 md:mt-[-70px] md:w-[80%] w-[90%] m-auto">
+    <div>
+       <div className="md:hidden mt-[-110px] mb-10  w-[90%] m-auto">
         <div className="w-full rounded-tl-xl rounded-tr-xl">
           <Image
             className=" object-contain rounded-tl-xl rounded-tr-xl"
@@ -40,8 +41,17 @@ function Card({id}:{id:number}) {
           </div>
         
         </div>
-
     </div>
+    <div className="hidden md:block w-[80%] m-auto shadow-xl shadow-circle-bg p-4 my-20 rounded-lg">
+              <h3 className="text-center font-bold text-3xl py-8">业务需求</h3>
+              <p className="w-[80%] m-auto text-center">
+                {
+                  content.arr[id-1].msg
+                }
+              </p>
+    </div>
+    </div>
+   
   );
 }
 

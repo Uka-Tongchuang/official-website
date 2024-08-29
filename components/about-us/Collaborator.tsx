@@ -1,6 +1,6 @@
 import React from "react";
 
-import { logoA, logoB, logoC, logoD } from "@/public/anout-us";
+import { logoA, logoB, logoC, logoD } from "@/public/about-us";
 import Image from "next/image";
 function Collaborator() {
   const logoList = [logoA, logoB, logoC, logoD];

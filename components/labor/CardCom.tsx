@@ -23,8 +23,9 @@ function CardCom() {
       <h2 className="h-10 mt-4 xl:text-3xl w-full text-center font-bold xl:mt-20">
         {content.moduleData.title}
       </h2>
-      <div className="w-[90%] m-auto grid grid-cols-2  gap-6 md:w-[80%] md:grid-cols-4 md:h-60 xl:h-auto item_boxs xl:p-8">
-        {content.moduleData.card.map((item, index) => {
+      <div className="">
+        <div className="w-[90%] m-auto h-[90%] bg-white shadow-2xl rounded-xl shadow-[#eef3fc] grid grid-cols-2  gap-6 md:w-[80%] md:grid-cols-4 md:h-60 md:gap-10 xl:gap-20 xl:h-auto item_boxs xl:p-8">
+          {content.moduleData.card.map((item, index) => {
           return (
             <div
               key={index}
@@ -49,6 +50,7 @@ function CardCom() {
             </div>
           );
         })}
+        </div>
       </div>
     </div>
   );

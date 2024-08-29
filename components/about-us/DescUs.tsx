@@ -2,7 +2,7 @@ import React from "react";
 import content from "./about.json";
 // img
 import Image from "next/image";
-import { descbg } from "@/public/anout-us";
+import { descbg } from "@/public/about-us";
 function DescUs() {
   return (
     

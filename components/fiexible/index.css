@@ -19,8 +19,7 @@ ul{
     background-image:
         /* 渐变色 */
         url("../../public/flexiblePage/value-bg.png");
-        background-size: 20% 50%;
-        background-position: bottom right;
+        background-size: 100% 100%;
         /* 将图片移动到右下角 */
         background-repeat: no-repeat;
         background-blend-mode: normal, multiply;

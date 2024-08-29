@@ -12,7 +12,7 @@ import AdvantageCom from "@/components/labor/AdvantageCom";
 import { bg } from "@/public/labor";
 // json
 import content from "@/components/labor/labor.json";
-function laborPage() {
+function LaborPage() {
   return (
     <div className="">
       <BannerCom
@@ -28,4 +28,4 @@ function laborPage() {
   );
 }
  
-export default laborPage;
+export default LaborPage;

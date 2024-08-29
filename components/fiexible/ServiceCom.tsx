@@ -3,7 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { lBg, lBgImgB } from "@/public/business";
 
+// com 
+import CustomizeFlowcharts from "../CustomizeFlowcharts";
+
 function ServiceCom() {
+  const arrs=["企业","员工","税务局"]
   return (
     <div className="">
       {/* //移动  */}
@@ -48,15 +52,14 @@ function ServiceCom() {
         </div>
         {/* contents */}
         <div className="w-[80%] flex justify-between items-center p-4 m-auto">
-          <div className="p-2 w-[20%] rounded-md text-lg font-medium flex justify-center items-center text-azul bg-gradient-to-r from-a-color to-lg-bg ">
-            企业
-          </div>
-          <div className="p-2 w-[20%] rounded-md text-lg font-medium flex justify-center items-center text-azul bg-gradient-to-r from-a-color to-lg-bg ">
-            员工
-          </div>
-          <div className="p-2 w-[22%] rounded-md text-lg font-medium flex justify-center items-center text-azul bg-gradient-to-r from-a-color to-lg-bg ">
-            税务局
-          </div>
+          {
+            arrs.map((item,index)=>{
+              return <div key={index} className="p-2 w-[24%] rounded-md text-lg font-medium flex justify-center items-center text-azul bg-gradient-to-r from-a-color to-lg-bg ">
+                     {item}
+              </div>
+            })
+          }
+        
         </div>
       </div>
       {/* //xl md  */}
@@ -64,6 +67,9 @@ function ServiceCom() {
         <h3 className="text-center h-14 font-bold text-lg xl:text-3xl py-10 my-10">
           服务流程
         </h3>
+        <div>
+          {/* <CustomizeFlowcharts /> */}
+        </div>
       </div>
     </div>
   );

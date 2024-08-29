@@ -202,7 +202,7 @@ export default function Footer(): JSX.Element {
                   <Image className="w-[20px] h-[20px]" src={Address} alt="" />
                 </span>
                 <span className="ml-2 text-nav-font-color">
-                  四川省成都市锦江区东大路xx号
+                  四川省成都市锦江区
                 </span>
               </div>
               <div className=" flex items-center text-white text-lg">
@@ -233,7 +233,7 @@ export default function Footer(): JSX.Element {
                   产品服务
                 </span>
                 <div className="flex flex-col justify-around h-60 text-md text-nav-font-color">
-                  <a href="/products/personnel-dispatch">人事派遣</a>
+                  <a href="/products/personnel-management">人事派遣</a>
                   <a href="/products/labor-dispatch">劳务派遣</a>
                   <a href="/products/position-outsource">岗位外包</a>
                   <a href="/products/business-outsource">业务外包</a>

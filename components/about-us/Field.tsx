@@ -12,7 +12,7 @@ import {
   fieldD,
   fieldE,
   fieldF,
-} from "@/public/anout-us";
+} from "@/public/about-us";
 function Field() {
   //组合数据
   const datas = [

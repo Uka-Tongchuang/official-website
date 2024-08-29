@@ -22,7 +22,7 @@ export default function Menu(): JSX.Element {
       pageTitle: "产品服务",
       subItem: [
         {
-          pageTitle: "人事管理",
+          pageTitle: "人事派遣",
           path: "/products/personnel-management",
           id: "personnel",
         },
@@ -61,7 +61,7 @@ export default function Menu(): JSX.Element {
       path: "/customer-case",
       id: "customerCase",
     },
-    { pageTitle: "公司新闻", subItem: null, path: "/news", id: "news" },
+    // { pageTitle: "公司新闻", subItem: null, path: "/news", id: "news" },
     {
       pageTitle: "关于今创",
       subItem: null,

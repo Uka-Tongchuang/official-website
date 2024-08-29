@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+import { logoF,logoS,logoT } from "@/public/customer-case";
 import Link from "next/link";
 import React from "react";
 
@@ -24,6 +25,18 @@ const goDetail = (id: number) => {
       break;
   }
 };
+//图片
+const renderImgItem=(id:number)=>{
+  switch (id) {
+    case 1:
+      return logoF;
+    case 2:
+      return logoS;
+    default:
+      return logoT;
+  }
+
+}
 function Card({ title, msg, achieve, type, img, id }: objtype) {
   return (
     <div>
@@ -39,9 +52,9 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
         <div className="rounded-xl border-[1px] border-app-hr mt-[-30px] p-6 relative bg-white z-20">
           <div className="h-10 flex justify-between mb-4">
             <h3 className="pb-1 font-bold text-md">{title}</h3>
-            <button className="border-app-hr border-[1px] rounded-md text-lg w-24 h-10 text-azul">
+            <span className="flex justify-center items-center border-app-hr border-[1px] rounded-md text-lg w-24 h-10 text-azul">
               {type}
-            </button>
+            </span>
           </div>
           <div className="flex">
             <div className="w-[20%] text-azul">需求：</div>
@@ -62,12 +75,13 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
       <div className="hidden md:flex mb-10">
         <Image
           src={img}
-          className="w-[26rem] h-72 xl:h-80 xl:w-[34rem]"
+          className="w-[26rem] h-80 xl:h-96 xl:w-[34rem]"
           alt=""
         />
-        <div className="ml-[-30px] h-72 xl:h-80 bg-white rounded-xl p-4 pl-8 xl:p-8 relative ">
-          <div className="font-bold py-2 text-2xl my-4">{title}</div>
-          <div className="flex text-md">
+        <div className="ml-[-30px] h-80 xl:h-96 bg-white rounded-xl p-1 pl-8 xl:p-12 relative ">
+        <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id as number)} alt=""/>
+          <div className="font-bold py-2 text-2xl my-2">{title}</div>
+          <div className="flex text-md xl:py-4">
             <div className="w-[20%] text-azul">需求：</div>
             <div className="flex-1">{msg}</div>
           </div>

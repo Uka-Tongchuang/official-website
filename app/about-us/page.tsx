@@ -1,11 +1,11 @@
 import React from "react";
 // com
 import BannerCom from "@/components/banner/BannerCom";
-import AboutUs from "@/components/anout-us/DescUs";
-import Culture from "@/components/anout-us/Culture";
-import Collaborator from "@/components/anout-us/Collaborator";
-import Field from "@/components/anout-us/Field";
-import { banbg } from "@/public/anout-us";
+import AboutUs from "@/components/about-us/DescUs";
+import Culture from "@/components/about-us/Culture";
+import Collaborator from "@/components/about-us/Collaborator";
+import Field from "@/components/about-us/Field";
+import { banbg } from "@/public/about-us/index";
 function Aboutpage() {
   return (
     <div>

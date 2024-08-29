@@ -25,7 +25,7 @@ function flowPath() {
     <div>
       {/* //pc端 */}
       <div
-        className="hidden xl:flex xl:h-[540px]  xl:justify-center xl:items-center"
+        className="hidden  xl:flex mb-20 w-[80%] m-auto rounded-xl h-[500px] 2xl:h-[540px]  justify-center items-center"
         style={{ background: "#F8FAFD" }}
       >
         <div className="w-[80%] h-[400px] flex justify-between items-center m-auto">

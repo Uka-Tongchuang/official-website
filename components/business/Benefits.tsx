@@ -28,7 +28,7 @@ function Benefits() {
       return (
         <div
           key={index}
-          className={` relative w-32 xl:w-36 h-[20%] rounded-md flex justify-center items-center md:text-lg xl:text-xl 2xl:text-2xl ${cardindex === index ? "bg-azul  text-white" : "bg-white "}`}
+          className={` relative cursor-pointer w-32 xl:w-36 h-[20%] rounded-md flex justify-center items-center md:text-lg xl:text-xl 2xl:text-2xl ${cardindex === index ? "bg-azul  text-white" : "bg-white "}`}
           onClick={() => {
             setCardData(arr[index]);
             setCardindex(index);

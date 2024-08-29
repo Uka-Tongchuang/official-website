@@ -6,7 +6,7 @@ import AdvantageCom from "@/components/fiexible/Advantage";
 import ValueCom from "@/components/fiexible/ServiceValue";
 // img
 import { banBg } from "@/public/flexiblePage/index";
-function flexiblePage() {
+function FlexiblePage() {
   return (
     <div>
       <BannerCom
@@ -21,4 +21,4 @@ function flexiblePage() {
   );
 }
 
-export default flexiblePage;
+export default FlexiblePage;
