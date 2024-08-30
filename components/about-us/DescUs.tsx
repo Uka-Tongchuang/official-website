@@ -16,10 +16,12 @@ function DescUs() {
       <div className="md:flex md:w-[80%] m-auto">
         <div
           className="w-[94%] m-auto md:bg-white
-         + bg-a-color text-about-color p-4 rounded-lg text-md"
+          bg-a-color text-about-color p-4 rounded-lg text-md 
+          grid grid-rows-3
+          gap-y-8"
         >
           <p>{content.descFirst}</p>
-          <p className="py-8">{content.descSecond}</p>
+          <p>{content.descSecond}</p>
           <p>{content.descThird}</p>
         </div>
         <Image className="w-[54%] md:w-80 md:ml-10 md:mb-8 m-auto mt-4" src={descbg} alt="" />

@@ -5,7 +5,7 @@ import content from "../position.json";
 import BubbleChartComponent from "./ScenCardCom";
 const SceneCom = () => {
   return (
-    <div className="w-full h-auto flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center">
     <div className="w-full h-full bg-white flex justify-center items-center relative">
       <BubbleChartComponent obj={content.scenarioArr}/>
     </div>

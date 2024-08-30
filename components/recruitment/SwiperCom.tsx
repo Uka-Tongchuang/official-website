@@ -206,11 +206,14 @@ function SwiperCom() {
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-a via-white to-a rounded-lg p-4 flex flex-col justify-between items-center"
+                className="bg-gradient-to-br from-a via-white to-a rounded-lg p-4 md:p-6 flex flex-col justify-between "
               >
                 <p className="text-azul text-xl">{padZero(item.num)}</p>
-                <p className="text-center my-4">{item.title}</p>
-                <Image className="w-7 xl:w-8" src={item.img} alt={item.title} />
+                <p className=" my-4">{item.title}</p>
+                <div>
+                <Image className="w-7 xl:w-8 md:float-right" src={item.img} alt={item.title} />
+                </div>
+                <div className="clear-both"></div>
               </div>
             );
           }

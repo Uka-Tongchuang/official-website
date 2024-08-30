@@ -183,9 +183,9 @@ export default function Footer(): JSX.Element {
         {/* info盒子*/}
         <div className="h-[600px] w-full bg-footer-black">
           {/* 上部分 */}
-          <div className="h-[417px] pt-[64px] w-[80%] m-auto flex justify-between ">
+          <div className="h-[417px] pt-[64px] w-[80%] m-auto items-center flex justify-between ">
             {/* 第一个盒子logo */}
-            <div className="">
+            <div className="w-[33%] pl-28">
               <Image className="w-[90px] h-[66px]" src={Logo} alt="" />
               <div className="mt-[40px] mb-4 flex items-center text-white text-lg">
                 <span>
@@ -227,7 +227,7 @@ export default function Footer(): JSX.Element {
               </div>
             </div>
             {/* 第二个 */}
-            <div className="flex w-[33%]">
+            <div className="flex w-[33%] pl-14">
               <div className="w-[50%]">
                 <span className="text-white text-xl flex mb-[40px]">
                   产品服务
@@ -252,7 +252,7 @@ export default function Footer(): JSX.Element {
               </div>
             </div>
             {/* 第三个 */}
-            <div className="w-[33%]">
+            <div className="w-[33%] flex justify-center items-center">
               <Image className="w-[176px] h-[191px]" src={UsImg} alt="" />
             </div>
           </div>

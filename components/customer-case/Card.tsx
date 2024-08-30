@@ -45,11 +45,11 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
             </span>
           </div>
           <div className="flex">
-            <div className="w-[20%] text-azul">需求：</div>
+            <div className="w-fit text-azul">需求：</div>
             <div className="flex-1">{msg}</div>
           </div>
           <div className="flex my-4">
-            <div className="w-[20%] text-azul">成就：</div>
+            <div className="w-fit text-azul">成就：</div>
             <div className="flex-1">{achieve}</div>
           </div>
           <div className="h-10  flex justify-end items-center">
@@ -70,11 +70,11 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
         <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id)} alt=""/>
           <div className="font-bold py-2 text-2xl my-2">{title}</div>
           <div className="flex text-md xl:py-4">
-            <div className="w-[20%] text-azul">需求：</div>
+            <div className="w-fit text-azul">需求：</div>
             <div className="flex-1">{msg}</div>
           </div>
           <div className="flex text-md my-4">
-            <div className="w-[20%] text-azul">成就：</div>
+            <div className="w-fit text-azul">成就：</div>
             <div className="flex-1">{achieve}</div>
           </div>
           <div className="flex items-center mt-6 ">

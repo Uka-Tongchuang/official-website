@@ -125,15 +125,15 @@ export default function Menu(): JSX.Element {
   ): JSX.Element => {
     if (expanded) {
       return (
-        <div className="border-y border-gray-200 w-screen bg-white">
-          <ul className="flex flex-row w-full   justify-between items-center">
+        <div className="border-y border-gray-200 w-[45%] left-[-5%] top-[100%] bg-white absolute rounded-lg">
+          <ul className="flex w-full flex-col justify-between items-center">
             {subItem.map((item, index) => (
               <li key={index}>
                 <a href={item.path} id={item.id}>
                   <button
                     className={`h-full px-5 py-4 hover:text-azul ${
                       currentPath === item.path
-                        ? "border-b-2 border-azul"
+                        ? "text-azul"
                         : "border-none"
                     }`}
                   >
@@ -260,19 +260,22 @@ export default function Menu(): JSX.Element {
                 />
               </a>
             </div>
-            <div className="flex flex-row h-full">
+            <div className="flex flex-row h-full relative">
+              {
+                expanded?renderSubItem(activeList):""
+              }
               {menu.map((menuItem, index) => (
                 <div key={index} className="h-full px-3">
                   {menuItem.subItem ? (
                     <button
-                      className={`inline-flex w-full justify-center items-center h-full px-5 py-2 hover:text-azul ${
-                        expanded ? "" : "bg-transparent"
+                      className={`inline-flex w-full justify-center items-center h-full px-5 py-2 relative hover:text-azul ${
+                        expanded ? "text-azul " : "bg-transparent" 
                       }`}
                       onClick={() => {
                         expandOnClick(menuItem.subItem);
                       }}
-                    >
-                      {menuItem.pageTitle}
+                    >{menuItem.pageTitle}
+                      <span className={`${   expanded ?"h-[6px] bg-azul":""} absolute rounded-md bottom-0 left-[50%] translate-x-[-50%] w-[50%] h-full flex flex-wrap `}></span>
                       {expanded ? <IoIosArrowUp /> : <IoIosArrowDown />}
                     </button>
                   ) : (
@@ -280,7 +283,7 @@ export default function Menu(): JSX.Element {
                       <button
                         className={`h-full px-5 py-2 border-b-2 hover:text-azul ${
                           currentPath === menuItem.path
-                            ? "border-azul"
+                            ? "border-azul text-azul"
                             : "border-white"
                         }`}
                       >
@@ -292,7 +295,7 @@ export default function Menu(): JSX.Element {
               ))}
             </div>
           </div>
-          {renderSubItem(activeList)}
+          
         </div>
       ) : (
         <div className="fixed top-0 w-full z-40 bg-white">

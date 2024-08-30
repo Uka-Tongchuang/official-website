@@ -31,9 +31,9 @@ function Field() {
       <div className="w-[80%] md:w-[90%] m-auto grid grid-cols-2 md:grid-cols-3 gap-4 p-3 rounded-lg bg-a-color">
         {datas.map((item, index) => {
           return (
-            <div key={index} className="p-2 rounded-md md:rounded-2xl bg-white flex md:justify-around items-center md:p-6 2xl:p-10">
+            <div key={index} className="p-2  rounded-md md:rounded-2xl bg-white flex gap-x-2 md:justify-around items-center md:p-6 2xl:p-10">
               <Image src={item.img} className="w-10 md:w-14 xl:w-20" alt="itm.title" loading="lazy" />
-              <h3 className="ml-2 text-md md:text-lg xl:text-xl text-g-color">{item.title}</h3>
+              <h3 className="text-md md:text-lg xl:text-xl text-g-color">{item.title}</h3>
             </div>
           );
         })}

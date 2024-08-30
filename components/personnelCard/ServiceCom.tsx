@@ -8,7 +8,7 @@ import { serverImg } from "@/public/renshi";
 import content from "./personnel.json"
 function ServerCom() {
   return (
-    <div className="w-full h-auto md:mb-14">
+    <div className="w-full h-auto md:my-14">
       <div className="w-[80%] m-auto flex flex-col-reverse justify-between md:w-[80%] xl:flex-row md:justify-between xl:justify-around md:items-center">
         <div className="xs:w-[80%] m-auto xl:w-[40%] md:w-[60%]">
           <Image className="object-contain xl:p-8" loading="lazy" src={serverImg} alt="" />

@@ -40,7 +40,7 @@ function ApplyCom() {
         <h3 className="w-full my-2 xl:mt-8 text-center text-lg font-bold text-title-text-color xl:text-3xl">
           适用场景
         </h3>
-        <div className="w-[90%] m-auto h-auto">
+        <div className="w-[90%] m-auto h-[60rem] mt-40">
           <SceneCom />
         </div>
 
