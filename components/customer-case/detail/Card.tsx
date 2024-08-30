@@ -15,7 +15,13 @@ const renderImg=(id:number):StaticImageData=>{
       return third
   }
 }
-function Card({id}:{id:number}) {
+
+interface CardProps {
+  id: number;
+}
+
+function Card( { id }: CardProps ) {
+  
   return (
     <div>
        <div className="md:hidden mt-[-110px] mb-10  w-[90%] m-auto">

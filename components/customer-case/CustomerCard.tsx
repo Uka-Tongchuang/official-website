@@ -5,7 +5,7 @@ import content from "./customer.json";
 import { first, second, third } from "@/public/customer-case";
 // com
 import Card from "./Card";
-function ExampreFirst() {
+function CustomerCard() {
   const imgs = [first, second, third];
   return (
     <div className="mt-[-110px] md:mt-[-70px] md:w-[80%] w-[90%] m-auto">
@@ -13,7 +13,7 @@ function ExampreFirst() {
         return (
           <Card
             key={index}
-            id={item.id}
+            id={index+1}
             title={item.title}
             msg={item.msg}
             achieve={item.achieve}
@@ -26,4 +26,4 @@ function ExampreFirst() {
   );
 }
 
-export default ExampreFirst;
+export default CustomerCard;

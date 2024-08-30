@@ -10,21 +10,9 @@ type objtype = {
   achieve: string;
   type: string;
   img: StaticImageData;
-  id?: number;
+  id: number;
 };
-//跳转
-const goDetail = (id: number) => {
-  switch (id) {
-    case 1:
-      return "detailFirst";
-    case 2:
-      return "detailSecond";
-    case 3:
-      return "detailThird";
-    default:
-      break;
-  }
-};
+
 //图片
 const renderImgItem=(id:number)=>{
   switch (id) {
@@ -66,7 +54,7 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
           </div>
           <div className="h-10  flex justify-end items-center">
             <button className="bg-azul w-24 h-10 text-white rounded-md">
-              <Link href={`/customer-case/${goDetail(id as number)}`}>查看详情</Link>
+              <Link href={`/customer-case/${id}`}>查看详情</Link>
             </button>
           </div>
         </div>
@@ -79,7 +67,7 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
           alt=""
         />
         <div className="ml-[-30px] h-80 xl:h-96 bg-white rounded-xl p-1 pl-8 xl:p-12 relative ">
-        <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id as number)} alt=""/>
+        <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id)} alt=""/>
           <div className="font-bold py-2 text-2xl my-2">{title}</div>
           <div className="flex text-md xl:py-4">
             <div className="w-[20%] text-azul">需求：</div>
@@ -91,7 +79,7 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
           </div>
           <div className="flex items-center mt-6 ">
             <button className="bg-azul w-24 h-10 text-white rounded-md">
-              <Link href={`/customer-case/${goDetail(id as number)}`}>查看详情</Link>
+              <Link href={`/customer-case/${id}`}>查看详情</Link>
             </button>
           </div>
         </div>

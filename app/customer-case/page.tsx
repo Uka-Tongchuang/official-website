@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Banner from '@/components/customer-case/Banner'
-import ExampreFirst from '@/components/customer-case/ExampreFirst'
+import CustomerCard from '@/components/customer-case/CustomerCard'
 function CustomerPage() {
   return (
     <div className='mt-[70px]'>
       <Banner />
-      <ExampreFirst/>
+      <CustomerCard/>
     </div>
   )
 }

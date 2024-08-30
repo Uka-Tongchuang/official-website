@@ -1,7 +1,12 @@
 import React from "react";
 
 import content from "../customer.json";
-function Acc({ id }: { id: number }) {
+
+interface AccProps {
+  id: number;
+}
+
+function Acc( { id }: AccProps ) {
   return (
     <div className="text-center mt-4 p-10">
       <h3 className="pb-4 text-center font-bold my-2 xl:text-3xl">案例成就</h3>

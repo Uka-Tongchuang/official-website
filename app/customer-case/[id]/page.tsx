@@ -9,21 +9,26 @@ import PayCom from "@/components/customer-case/detail/PayCom";
 import Cooperate from "@/components/customer-case/detail/Cooperate";
 import Acc from "@/components/customer-case/detail/Acc";
 
-function DetailPage() {
-  // 修改函数名为 DetailPage
+interface Props {
+    params: {
+        id: number;
+    };
+}
 
-  // 确保 id 正确获取
-  return (
-    <div className="mt-[70px] md:bg-gradient-to-b from-white  via-white to-a-color">
-      <Banner id={3} />
-      <Card id={3} />
-      <Problem id={3} />
-      <Tactics id={3} />
-      <PayCom id={3}/>
-      <Cooperate />
-      <Acc id={3} />
-    </div>
-  );
+function DetailPage({ params }: Props) {
+    const id = params.id;
+    // 确保 id 正确获取
+    return (
+        <div className='mt-[70px] md:bg-gradient-to-b from-white  via-white to-a-color'>
+            <Banner id={id} />
+            <Card id={id} />
+            <Problem id={id} />
+            <Tactics id={id} />
+            <PayCom id={id} />
+            <Cooperate />
+            <Acc id={id} />
+        </div>
+    );
 }
 
 export default DetailPage;
