@@ -244,9 +244,6 @@ export default function Footer(): JSX.Element {
               <div className="text-white text-xl flex flex-col w-[33%] ml-2">
                 <a href="/about-us">了解公司</a>
                 <a href="/customer-case" className="mt-[40px]">
-                  解决方案
-                </a>
-                <a href="/customer-case" className="mt-[40px]">
                   客户案例
                 </a>
               </div>

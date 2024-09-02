@@ -268,14 +268,14 @@ export default function Menu(): JSX.Element {
                 <div key={index} className="h-full px-3">
                   {menuItem.subItem ? (
                     <button
-                      className={`inline-flex w-full justify-center items-center h-full px-5 py-2 relative hover:text-azul ${
-                        expanded ? "text-azul " : "bg-transparent" 
-                      }`}
+                    className={`inline-flex w-full justify-center items-center h-full px-5 py-1 relative border-b-2 box-border hover:text-azul ${
+                      expanded ? "text-azul border-b-azul" : "bg-transparent border-b-transparent" 
+                    }`}                    
                       onClick={() => {
                         expandOnClick(menuItem.subItem);
                       }}
                     >{menuItem.pageTitle}
-                      <span className={`${   expanded ?"h-[6px] bg-azul":""} absolute rounded-md bottom-0 left-[50%] translate-x-[-50%] w-[50%] h-full flex flex-wrap `}></span>
+                     
                       {expanded ? <IoIosArrowUp /> : <IoIosArrowDown />}
                     </button>
                   ) : (
