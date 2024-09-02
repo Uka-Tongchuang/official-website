@@ -202,7 +202,7 @@ export default function Footer(): JSX.Element {
                   <Image className="w-[20px] h-[20px]" src={Address} alt="" />
                 </span>
                 <span className="ml-2 text-nav-font-color">
-                  四川省成都市锦江区
+                  四川省成都市锦江区东大路环球贸易广场(一期)1007号
                 </span>
               </div>
               <div className=" flex items-center text-white text-lg">
