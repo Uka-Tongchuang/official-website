@@ -3,7 +3,7 @@ import React from "react";
 // components
 import BannerCom from "@/components/banner/BannerCom";
 import ServiceCom from "@/components/position/ServiceCom";
-import ApplyCom from "@/components/position/ApplyCom";
+// import ApplyCom from "@/components/position/ApplyCom";
 import ServicePro from "@/components/position/ServicePro";
 import ServiceValueCom from "@/components/position/ServiceValue";
 import BenefitsCom from "@/components/position/BenefitsCom";
@@ -18,7 +18,7 @@ function PositionOutsource() {
         img={bgImg}
       />
       <ServiceCom />
-      <ApplyCom />
+      {/* <ApplyCom /> */}
       <ServicePro />
       <ServiceValueCom />
       <BenefitsCom />

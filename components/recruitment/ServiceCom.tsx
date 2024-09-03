@@ -96,7 +96,11 @@ function ServiceCom() {
           服务优势
         </h3>
         {cardArr.map((item, index) => {
-          return cardrender(item);
+          return(
+            <React.Fragment key={index}>
+              {cardrender(item)}
+            </React.Fragment>
+          );
         })}
       </div>
     </div>

@@ -64,7 +64,7 @@ function ServiceCom() {
       </div>
       {/* //xl md  */}
       <div className="hidden md:block">
-        <h3 className="text-center h-14 font-bold text-lg xl:text-3xl py-10 my-10">
+        <h3 className="text-center h-14 font-bold text-lg xl:text-3xl py-10">
           服务流程
         </h3>
         <div className="flex justify-center items-center">

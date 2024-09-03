@@ -95,7 +95,11 @@ function Advantage() {
         </h3>
         <div className="hidden md:block w-[75%] m-auto">
         {cardArr.map((item, index) => {
-          return cardrender(item);
+          return(
+            <React.Fragment key={index}>
+              {cardrender(item)}
+            </React.Fragment>
+          );
         })}
       </div>
       </div>

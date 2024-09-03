@@ -26,7 +26,11 @@ function ServerCom() {
       </h3>
       <div className="md:hidden w-[90%] m-auto bg-a-color rounded-xl flex flex-col justify-between px-4 pb-4">
         {content.contentservice.map((item, index) => {
-          return renderCard(item.title,imgs[index],item.msg)
+          return(
+            <React.Fragment key={index}>
+              {renderCard(item.title,imgs[index],item.msg)}
+            </React.Fragment>
+          )
         })}
       </div>
       {/* //md xl */}
