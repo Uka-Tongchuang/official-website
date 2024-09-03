@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 // local import
-import SmoothScrolling from '@/components/reusables/smoothScrolling';
+// import SmoothScrolling from '@/components/reusables/smoothScrolling';
 import Layout from '@/components/reusables/layout';
 import Menu from "@/components/menu";
 import Footer from "@/components/footer";
@@ -23,9 +23,7 @@ export default function RootLayout({
       <body suppressHydrationWarning style={{ fontFamily: 'Microsoft YaHei' }}>
         <Layout>
           <Menu />
-          <SmoothScrolling>
             {children}
-          </SmoothScrolling>
           <Footer />
         </Layout>
       </body>

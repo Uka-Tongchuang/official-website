@@ -1,6 +1,8 @@
 "use client";
-import Image from "next/image";
-import React from "react";
+import Image, { StaticImageData } from "next/image";
+import React, { useRef } from "react";
+// icon
+import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 //ui库
 import { Carousel } from "antd";
 // img
@@ -25,108 +27,194 @@ import {
 } from "@/public/labor";
 // json
 import content from "./labor.json";
-const contentStyle: React.CSSProperties = {
-  margin: 0,
-  height: "400px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+
+interface swiperItm {
+  img: StaticImageData;
+  title: string;
+  num: number; // 序号
+}
+
+type swiperArr = Array<swiperItm>;
+type swiperData = Array<swiperArr>;
 function ProcessCom() {
   //补0函数
   const padZero = (num: number): string => {
     return num < 10 ? `0${num}` : `${num}`;
   };
-  //图片数组
-  const imgArr = [
-    cdO,
-    cdT,
-    cdTh,
-    cdF,
-    cdW,
-    cdS,
-    cdSe,
-    cdN,
-    cdJ,
-    cdTen,
-    cdX,
-    cdY,
-    cdZ,
+  //轮播图小卡片数据
+  const swiperObject = content.swipercard;
+  //整合数据
+  const swiperArrData: swiperData = [
+    [
+      { img: cdO, title: swiperObject.first[0], num: 1 },
+      { img: cdT, title: swiperObject.first[1], num: 2 },
+      { img: cdTh, title: swiperObject.first[2], num: 3 },
+    ],
+    [
+      { img: cdF, title: swiperObject.second[0], num: 4 },
+      { img: cdW, title: swiperObject.second[1], num: 5 },
+      { img: cdS, title: swiperObject.second[2], num: 6 },
+    ],
+    [
+      { img: cdSe, title: swiperObject.third[0], num: 7 },
+      { img: cdN, title: swiperObject.third[1], num: 8 },
+      { img: cdJ, title: swiperObject.third[2], num: 9 },
+    ],
+    [
+      { img: cdTen, title: swiperObject.fourth[0], num: 10 },
+      { img: cdX, title: swiperObject.fourth[1], num: 11 },
+      { img: cdY, title: swiperObject.fourth[2], num: 12 },
+    ],
+    [{ img: cdZ, title: swiperObject.last[0], num: 13 }],
+  ];
+  const swiperArrDataPc: swiperData = [
+    [
+      { img: cdO, title: swiperObject.first[0], num: 1 },
+      { img: cdT, title: swiperObject.first[1], num: 2 },
+      { img: cdTh, title: swiperObject.first[2], num: 3 },
+    ],
+    [
+      { img: cdF, title: swiperObject.second[0], num: 4 },
+      { img: cdW, title: swiperObject.second[1], num: 5 },
+      { img: cdS, title: swiperObject.second[2], num: 6 },
+    ],
+    [
+      { img: cdSe, title: swiperObject.third[0], num: 7 },
+      { img: cdN, title: swiperObject.third[1], num: 8 },
+      { img: cdJ, title: swiperObject.third[2], num: 9 },
+    ],
+    [
+      { img: cdTen, title: swiperObject.fourth[0], num: 10 },
+      { img: cdX, title: swiperObject.fourth[1], num: 11 },
+      { img: cdY, title: swiperObject.fourth[2], num: 12 },
+      { img: cdZ, title: swiperObject.last[0], num: 13 },
+    ],
   ];
   //轮播图img
   const swiperArr = [swo, swt, swth, swf];
-  const cardFirstData=content.swipercard.slice(0,3)
-  console.log(cardFirstData);
-  
-  const cardSecondData=content.swipercard.slice(3,5)
-  const cardThirthData=content.swipercard.slice(6,8)
-  const cardFourthData=content.swipercard.slice(9,12)
+
+  //renderCard
+  const renderCardItem = (arr: swiperArr) => {
+    return (
+      <div className="flex w-[90%] m-auto md:w-[70%] md:ml-[6%] h-40 items-center justify-between">
+        {arr.map((item: swiperItm, index) => {
+          return (
+            <div
+              key={index}
+              className="flex w-[32%] md:w-[30%] h-20 xl:h-24 xl:mb-4 p-1 flex-col items-center justify-around m-1 rounded-md shadow-[0_4px_6px_-1px_rgba(107,114,128,0.3)] border-b-0 border-l-0 border-r-0 border-gray-300"
+            >
+              <div className="flex justify-center items-center">
+                <div className="w-6 h-6 flex items-center justify-center ">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    className="object-contain"
+                  />
+                  &ensp;
+                  <span className=" md:hidden text-sm ml-1">
+                    {padZero(item.num)}&ensp;
+                  </span>
+                </div>
+              </div>
+              <p className="text-center text-sm text-ironside-grey">
+                <span className="block md:hidden">{item.title}</span>
+                <span className="hidden md:block text-sm ml-1">
+                  {padZero(item.num)}&ensp;{item.title}
+                </span>
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  const carouselRef = useRef<any>();
+
+  //下一页
+  const handleNext = () => {
+    carouselRef.current?.next(); // 调用 Carousel 的 next 方法
+  };
+  //上一页
+  const handlePrev = () => {
+    carouselRef.current?.prev(); // 调用 Carousel 的 prev 方法
+  };
   return (
     <div>
       {/* //移动 */}
-      <div className="md:hidden xl:hidden w-full m-auto p-4">
-        <h2 className="w-full h-10 flex justify-center items-center text-lg font-bold">
+      <div className="md:hidden w-full m-auto p-4">
+        <h2 className="w-full h-10 text-center py-5 text-lg font-bold">
           招聘需求和公开招聘
         </h2>
-        <div className="w-full m-auto h-auto grid grid-cols-2 gap-4">
-          {content.swipercard.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="w-full h-10 flex bg-m-color rounded-md"
-              >
-                <div className="w-7 h-7 m-1.5 rounded-md bg-white flex justify-center items-center">
-                  <Image
-                    className="object-contain w-6 h-6"
-                    src={imgArr[index]}
-                    alt=""
-                  />
+        <div className="w-full m-auto h-auto">
+          <Carousel>
+            {swiperArrData.map((item, index) => {
+              return (
+                <div key={index} className="flex">
+                  {renderCardItem(item)}
                 </div>
-                <h4 className="text-sm flex items-center">
-                  <span className="mr-1 ml-1">{padZero(index + 1)}</span>
-                  {item}
-                </h4>
-              </div>
-            );
-          })}
+              );
+            })}
+          </Carousel>
         </div>
       </div>
       {/* //pc  平板 */}
-      <div className="hidden md:block md:w-[90%] h-96 md:m-auto ">
-  <Carousel
-    arrows
-    dotPosition="right"
-    infinite={false}
-    className="relative"
-    dots={{ className: "slick-dots custom-dots" }}
-  >
-    {content.swiper.map((item, index) => {
-      return (
-        <div
-          key={index}
-          className="w-full h-full flex justify-between items-center bg-white rounded-lg shadow-lg p-6"
+      <div className="hidden relative md:block w-[90%] h-auto m-auto xl:w-[90%] xl:h-auto">
+        <Carousel
+          dotPosition="right"
+          infinite={false}
+          dots={{ className: "slick-dots custom-dots" }}
+          adaptiveHeight
+          draggable
+          ref={carouselRef}
+          className="relative"
         >
-          {/* 左侧文本部分 */}
-          <div className="flex-1">
-            <h3 className="text-xl text-center font-bold mb-4">{item.title}</h3>
-            <p className="w-[80%] m-auto text-ironside-grey mb-4">{item.message}</p>
-          </div>
+          {content.swiper.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="w-full h-auto md:h-[400px] xl:h-[500px] flex flex-col md:flex-row justify-between items-center bg-white rounded-lg shadow-lg p-6 overflow-hidden"
+              >
+                {/* 左侧文本部分 */}
+                <div className="flex-1 md:w-[63%] md:m-auto text-center xl:text-left">
+                  <h3 className="text-lg xl:text-2xl md:text-center font-bold mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="w-[100%] m-auto xl:ml-0 text-ironside-grey mb-4 xl:text-lg md:text-left">
+                    {item.message}
+                  </p>
+                </div>
 
-          {/* 右侧图片部分 */}
-          <div className="w-40 h-40 flex justify-center items-center">
-            <Image
-              className="object-contain w-full h-full p-6"
-              src={swiperArr[index]}
-              alt=""
-            />
-          </div>
+                {/* 右侧图片和卡片部分 */}
+                <div className="flex flex-col md:flex-row md:w-[90%] md:m-auto items-center">
+                  <div className="w-auto h-full md:h-44 xl:h-52 flex justify-center md:justify-end items-center xl:mt-10">
+                    <Image
+                      className="object-contain w-40 xl:w-52 h-full xl:ml-20"
+                      src={swiperArr[index]}
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex-1 md:w-auto mt-6 flex ">
+                    {renderCardItem(swiperArrDataPc[index])}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
+        <div
+          className="cursor-pointer absolute top-[30%] right-1 z-10 "
+          onClick={handlePrev}
+        >
+          <ArrowUpOutlined className="text-xl text-slate-400"/>
         </div>
-      );
-    })}
-  </Carousel>
-</div>
-
+        <div
+          className="cursor-pointer absolute top-[65%] right-1 z-10"
+          onClick={handleNext}
+        >
+          <ArrowDownOutlined className="text-xl text-slate-400"/>
+        </div>
+      </div>
     </div>
   );
 }

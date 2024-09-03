@@ -55,11 +55,11 @@ export default function Footer(): JSX.Element {
                   }`}
                 >
                   <a
-                    href="/products/personnel-dispatch"
+                    href="/products/personnel-management"
                     id="personnel"
                     className="w-full text-lg border-b text-gray-500 pl-[36px] border-slate-300 flex px-4 py-4 bg-white"
                   >
-                    人事派遣
+                    人事管理
                   </a>
                   <a
                     href="/products/labor-dispatch"
@@ -170,10 +170,10 @@ export default function Footer(): JSX.Element {
         {/* 加入我们 */}
         <div className="relative">
           <Image className="w-full" src={BgFooterImage} alt="" />
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
+          <div className="w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
             <p className="text-3xl">
               已为超过<span className="text-azul">4,600</span>{" "}
-              家企业，服务人数超过<span className="text-azul">50W+</span>
+              家企业提供服务，服务人数超过<span className="text-azul">50W+</span>
             </p>
             <button className="w-[132px] h-[32px] flex justify-center items-center text-md text-white bg-azul">
               加入我们
@@ -183,9 +183,9 @@ export default function Footer(): JSX.Element {
         {/* info盒子*/}
         <div className="h-[600px] w-full bg-footer-black">
           {/* 上部分 */}
-          <div className="h-[417px] pt-[64px] w-[80%] m-auto flex justify-between ">
+          <div className="h-[417px] pt-[64px] w-[80%] m-auto items-center flex justify-between ">
             {/* 第一个盒子logo */}
-            <div className="">
+            <div className="w-[33%] pl-28">
               <Image className="w-[90px] h-[66px]" src={Logo} alt="" />
               <div className="mt-[40px] mb-4 flex items-center text-white text-lg">
                 <span>
@@ -202,7 +202,7 @@ export default function Footer(): JSX.Element {
                   <Image className="w-[20px] h-[20px]" src={Address} alt="" />
                 </span>
                 <span className="ml-2 text-nav-font-color">
-                  四川省成都市锦江区东大路xx号
+                  四川省成都市锦江区东大路环球贸易广场(一期)1007号
                 </span>
               </div>
               <div className=" flex items-center text-white text-lg">
@@ -227,13 +227,13 @@ export default function Footer(): JSX.Element {
               </div>
             </div>
             {/* 第二个 */}
-            <div className="flex w-[33%]">
+            <div className="flex w-[33%] pl-14">
               <div className="w-[50%]">
                 <span className="text-white text-xl flex mb-[40px]">
                   产品服务
                 </span>
                 <div className="flex flex-col justify-around h-60 text-md text-nav-font-color">
-                  <a href="/products/personnel-dispatch">人事派遣</a>
+                  <a href="/products/personnel-management">人事派遣</a>
                   <a href="/products/labor-dispatch">劳务派遣</a>
                   <a href="/products/position-outsource">岗位外包</a>
                   <a href="/products/business-outsource">业务外包</a>
@@ -244,15 +244,12 @@ export default function Footer(): JSX.Element {
               <div className="text-white text-xl flex flex-col w-[33%] ml-2">
                 <a href="/about-us">了解公司</a>
                 <a href="/customer-case" className="mt-[40px]">
-                  解决方案
-                </a>
-                <a href="/customer-case" className="mt-[40px]">
                   客户案例
                 </a>
               </div>
             </div>
             {/* 第三个 */}
-            <div className="w-[33%]">
+            <div className="w-[33%] flex justify-center items-center">
               <Image className="w-[176px] h-[191px]" src={UsImg} alt="" />
             </div>
           </div>

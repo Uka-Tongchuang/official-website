@@ -1,0 +1,27 @@
+
+
+.slick-dots,.slick-dots-bottom {
+    top: 230px;
+}
+/* 默认的 Carousel 圆点样式为灰色 */
+.ant-carousel .slick-dots li button {
+    background: #aaa9a9; /* 默认灰色 */
+    transition: background 0.3s ease;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: #165CFF; /* 激活状态的颜色 */
+}
+
+.ant-carousel .slick-dots li:hover button {
+    background: #165CFF; /* 划过时的高亮颜色 */
+}
+.boxss{
+        background-image:
+            /* 渐变色 */
+            url("../../public/recruitment/value-bg-pc.png");
+            background-size: 20% 50%;
+            background-position: bottom right;
+            /* 将图片移动到右下角 */
+            background-repeat: no-repeat;
+}

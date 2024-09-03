@@ -1,0 +1,416 @@
+{
+    "contentservice": [
+        {
+            "title": "专业化顾问团队",
+            "msg": "档案管理、入离职管理、劳动关系管理、工会事务管理、社保公积金管理、薪酬福利管理、绩效考核管理、各项证明管理"
+        },
+        {
+            "title": "员工关系管理",
+            "msg": "退工处理、突发事件处理、劳动争议处理工伤、工亡等特殊事件处理"
+        },
+        {
+            "title": "员工培训管理",
+            "msg": "岗前入职培训、岗位技能专项培训、通用技能提升培训"
+        },
+        {
+            "title": "招聘管理",
+            "msg": "人才储备、精准寻访、人才测评"
+        }
+    ],
+    "appli": {
+        "first": [
+            "销售",
+            "店长",
+            "收银",
+            "店员",
+            "地摊",
+            "理货"
+        ],
+        "second": [
+            "线上客服",
+            "电话客服",
+            "采购助理",
+            "材料审核"
+        ],
+        "third": [
+            "行政文秘",
+            "业务助理",
+            "人事助理",
+            "财务助理"
+        ],
+        "fourth": [
+            "咖啡师",
+            "办公室文员",
+            "服务员",
+            "调酒师"
+        ]
+    },
+    "scenarioArr": [
+        {
+            "label": "行政文秘",
+            "icon": "circle big",
+            "line": "none",
+            "value": 15
+        },
+        {
+            "label": "电话客服",
+            "icon": "circle big",
+            "line": "none",
+            "value": 20
+        },
+        {
+            "label": "业务助理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 16
+        },
+        {
+            "label": "销售",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 16
+        },
+        {
+            "label": "线上客服",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 20
+        },
+        {
+            "label": "调酒师",
+            "icon": "circle",
+            "line": "none",
+            "value":20
+        },
+        {
+            "label": "办公室文员",
+            "icon": "circle",
+            "line": "none",
+            "value": 13
+        },
+        {
+            "label": "采购助理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 13
+        },
+        {
+            "label": "材料审核",
+            "icon": "circle",
+            "line": "none",
+            "value": 12
+        },
+        {
+            "label": "财务助理",
+            "icon": "circle",
+            "line": "none",
+            "value": 15
+        },
+        {
+            "label": "人事管理",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 15
+        },
+        {
+            "label": "店长",
+            "icon": "circle",
+            "value": 10
+        },
+        {
+            "label": "服务员",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 12
+        },
+        {
+            "label": "店员",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 5
+        },
+        {
+            "label": "地推",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 10
+        },
+        {
+            "label": "理货",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 10
+        },
+        {
+            "label": "咖啡师",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 8
+        },
+        {
+            "label": "收银",
+            "icon": "circle",
+            "line": "dotted",
+            "value": 6
+        },
+        {
+            "label": "关键词",
+            "icon": "KEYWORD",
+            "line": "dashed",
+            "value": 40
+        }
+    ],
+    "scenearr": [
+        {
+            "label": "行政文秘",
+            "icon": "circle big",
+            "line": "none",
+            "style": {
+                "top": 0.38,
+                "left": 0.1,
+                "diameter": 30,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "电话客服",
+            "icon": "circle big",
+            "line": "none",
+            "style": {
+                "top": 0.38,
+                "left": 0.8,
+                "diameter": 30,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "业务助理",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.3,
+                "left": 2.0,
+                "diameter": 16,
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "销售",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.3,
+                "left": 0.2,
+                "diameter": 16,
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "线上客服",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.23,
+                "left": 0.28,
+                "diameter": 25,
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "调酒师",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": 0.23,
+                "left": 0.28,
+                "diameter":25,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "办公室文员",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": 2.4,
+                "left": 3.7,
+                "diameter": 18,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "采购助理",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 3.0,
+                "left": 4.5,
+                "diameter": 18,
+                "bg":"bg-white"
+            }
+        },
+        {
+            "label": "材料审核",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": 3.0,
+                "left": 6.0,
+                "diameter": 17,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "财务助理",
+            "icon": "circle",
+            "line": "none",
+            "style": {
+                "top": 3.0,
+                "left": 6.0,
+                "diameter": 20,
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "人事管理",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.3,
+                "left": 0.6,
+                "diameter": "21",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "店长",
+            "icon": "circle",
+            "style": {
+                "top": 0.5,
+                "left": 0.7,
+                "diameter": "18",
+                  "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "服务员",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.5,
+                "left": 0.7,
+                "diameter": "16",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "店员",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.6,
+                "left": 0.7,
+                "diameter": "16",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "地推",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": 0.7,
+                "left": 0.7,
+                "diameter": "18",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "理货",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top":0.8,
+                "left": 0.7,
+                "diameter": "16",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "咖啡师",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "9.0",
+                "left": 0.7,
+                "diameter": "13",
+                  "bg":"bg-white"
+            }
+        },
+        {
+            "label": "收银",
+            "icon": "circle",
+            "line": "dotted",
+            "style": {
+                "top": "9.0",
+                "left": 0.7,
+                "diameter": "18",
+                "bg":"bg-circle-bg"
+            }
+        },
+        {
+            "label": "关键词",
+            "icon": "KEYWORD",
+            "line": "dashed",
+            "style": {
+                "top": "5.0",
+                "left": "5.0",
+                "diameter": "60",
+                "bg":"bg-white"
+            }
+        }
+    ],
+    "sericevalue":[
+        {
+            "title":"解决方案",
+            "desca":"一站式解决方案",
+            "descb":"专业风险管控",
+            "descc":"风险有效隔离"
+        },
+        {
+            "title":"覆盖范围",
+            "desca":"人员配置灵活",
+            "descb":"专业风险管控",
+            "descc":"降低企业成本"
+        },
+        {
+            "title":"专业团队",
+            "desca":"专业服务团队",
+            "descb":"高效获取人才",
+            "descc":"支持业务运行"
+        },
+        {
+            "title":"提升效率",
+            "desca":"摆脱事务工作",
+            "descb":"专注核心业务",
+            "descc":"提升终端销量"
+        }
+    ],
+    "benefits":{
+        "title":"服务优势",
+        "cards":[
+            {
+                "title":"岗位类别多样",
+                "msg":"自2014年开展外包业务以来，目前已为众多不同行业知名企业提供行政文员、运营、客服、配送、店员、技术开发等多元化岗位外包服务。"
+            },
+            {
+                "title":"服务经验丰富",
+                "msg":"多次承接万人以上的岗位外包项目，针对项目的转签、日常服务、裁撤等均有丰富的服务和管理经验。"
+            },
+            {
+                "title":"方案专属定制",
+                "msg":"可根据客户需求提供个性化岗位外包解决方案，以客户为导向，满足客户的个性化需求，保证服务质量。"
+            }
+        ]
+    }
+}
