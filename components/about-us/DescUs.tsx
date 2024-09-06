@@ -24,7 +24,7 @@ function DescUs() {
           <p>{content.descSecond}</p>
           <p>{content.descThird}</p>
         </div>
-        <Image className="w-[54%] md:w-80 md:ml-10 md:mb-8 m-auto mt-4" src={descbg} alt="" />
+        <Image className="w-[54%] md:w-80 md:ml-10 md:mb-8 m-auto mt-4" src={descbg} alt="background" loading='lazy'/>
       </div>
     </div>
   );

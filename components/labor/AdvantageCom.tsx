@@ -10,7 +10,7 @@ function AdvantageCom({ img, title, arr }: objType) {
   return (
     <div className="w-[90%] h-auto m-auto md:w-[80%] bg-a-color md:flex md:items-center md:mt-20 md:mb-20 md:rounded-xl">
       <div className="w-[60%] md:w-[40%] m-auto xl:p-4">
-        <Image src={img} alt="" className="object-contain" />
+        <Image src={img} alt="advantage" className="object-contain" loading='lazy'/>
       </div>
       <div className="p-4 md:w-[58%] md:mb-8">
         <h4 className="font-bold text-center xl:py-8 md:py-4 md:text-left text-lg md:text-lg xl:text-3xl">

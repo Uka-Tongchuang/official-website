@@ -15,7 +15,7 @@ function Problem({id}:{id:number}) {
        {
         content.arr[id-1].pros.map((item,index)=>{
             return <div key={index} className='bg-white my-4 p-4 xl:p-8 2xl:p-14 flex items-center rounded-lg md:w-[25%] md:flex-col md:items-start md:bg-gradient-to-b md:from-[#EBF4FF]  md:via-white md:to-white md:shadow-xl md:shadow-circle-bg'>
-                <Image className='w-8 mr-4 md:mb-2' src={imgs[index]} alt=""/>
+                <Image className='w-8 mr-4 md:mb-2' src={imgs[index]} alt="icon" loading='lazy'/>
                 <p className='text-md text-g-color md:text-center  2xl:text-xl'>{item}</p>
             </div>
         })

@@ -16,7 +16,7 @@ function AboutUs() {
             </h3>
             <div className='h-fit md:h-[40vh] w-full flex flex-row justify-center my-2 md:my-10'>
                 <div className='hidden basis-1/2 md:flex md:justify-center'>
-                    <Image src={img} alt='' className='h-full w-auto' />
+                    <Image src={img} alt='background' className='h-full w-auto' loading='lazy'/>
                 </div>
                 <div className='w-[80%] md:basis-1/2 md:w-fit'>
                     <div className='w-full md:w-[80%] h-full flex flex-col justify-center md:bg-white md:shadow-xl p-1 md:p-10'>

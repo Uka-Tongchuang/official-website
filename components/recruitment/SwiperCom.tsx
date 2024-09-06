@@ -152,7 +152,7 @@ function SwiperCom() {
   const cartRender = (title: string, img: StaticImageData, num: number) => {
     return (
       <div className="w-full h-full flex flex-col ml-3 p-2">
-        <Image className="w-8 h-8 mb-4" src={img} alt="" />
+        <Image className="w-8 h-8 mb-4" src={img} alt="background" loading='lazy'/>
         <div className="flex w-full h-full">
           <div className="flex h-full items-start">
             <div className="flex bg-azul w-1 h-1 mt-[40%]  rounded-full float-left"></div>
@@ -211,7 +211,7 @@ function SwiperCom() {
                 <p className="text-azul text-xl">{padZero(item.num)}</p>
                 <p className=" my-4">{item.title}</p>
                 <div>
-                <Image className="w-7 xl:w-8 md:float-right" src={item.img} alt={item.title} />
+                <Image className="w-7 xl:w-8 md:float-right" src={item.img} alt={item.title} loading='lazy'/>
                 </div>
                 <div className="clear-both"></div>
               </div>

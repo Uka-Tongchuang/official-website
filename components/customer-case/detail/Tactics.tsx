@@ -13,7 +13,7 @@ function Tactics({id}:{id:number}) {
        {
         content.arr[id-1].active.map((item,index)=>{
             return <div key={index} className='my-4 xl:p-8 2xl:p-14 bg-white p-4 flex items-center rounded-lg md:w-[25%] md:flex-col md:items-start md:bg-gradient-to-b md:from-[#EBF4FF]  md:via-white md:to-white md:shadow-xl md:shadow-circle-bg'>
-                <Image className='w-8 mr-4' src={imgs[index]} alt=""/>
+                <Image className='w-8 mr-4' src={imgs[index]} alt="icon" loading='lazy'/>
                 <p className='text-md text-g-color md:text-center  3xl:text-xl'>{item}</p>
             </div>
         })

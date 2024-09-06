@@ -34,7 +34,8 @@ function CardCom() {
               <Image
                 className="w-10 h-10 xl:w-20 xl:h-20 xl:mb-4 xl:ml-4"
                 src={iconArr[index]}
-                alt=""
+                alt="icon"
+                loading='lazy'
               />
               <h4 className="xl:text-xl font-bold text-center xl:ml-4">
                 {item.title}
@@ -45,7 +46,8 @@ function CardCom() {
               <Image
                 className="w-4 h-4 mt-6 ml-[90%] xl:w-6 xl:h-6 xl:mt-2"
                 src={IconArrSecond[index]}
-                alt=""
+                alt="icon"
+                loading='lazy'
               />
             </div>
           );

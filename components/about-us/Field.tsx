@@ -32,7 +32,7 @@ function Field() {
         {datas.map((item, index) => {
           return (
             <div key={index} className="p-2  rounded-md md:rounded-2xl bg-white flex gap-x-2 md:justify-around items-center md:p-6 2xl:p-10">
-              <Image src={item.img} className="w-10 md:w-14 xl:w-20" alt="itm.title" loading="lazy" />
+              <Image src={item.img} className="w-10 md:w-14 xl:w-20" alt={item.title} loading="lazy" />
               <h3 className="text-md md:text-lg xl:text-xl text-g-color">{item.title}</h3>
             </div>
           );

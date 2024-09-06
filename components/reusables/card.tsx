@@ -12,7 +12,7 @@ export default function ServiceCard(props: CardProps): JSX.Element {
     return (
         <div className='shadow-md shadow-blue-100 bg-gradient-to-b from-blue-50 via-blue-300/10 to-white w-full h-full px-4 py-4 md:py-8 rounded-lg'>
             <h3 className='text-md md:text-lg font-semibold flex items-center'>
-                <Image src={icon} alt='' className='w-5 h-auto mr-2' />
+                <Image src={icon} alt='icon' className='w-5 h-auto mr-2' loading='lazy'/>
                 {title}
             </h3>
             <ul className='list-disc list-inside space-y-2 md:space-y-4 mt-2 h-max justify-around marker:text-blue-500 text-sm md:text-md'>

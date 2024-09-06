@@ -47,7 +47,7 @@ function Benefits() {
     return (
       <div className="flex items-center">
         {/* img box */}
-        <Image className="w-44 h-44 xl:w-60 xl:h-60 mx-4 xl:mx-12" src={imgsTab[cardindex]} alt={item.dtitle} />
+        <Image className="w-44 h-44 xl:w-60 xl:h-60 mx-4 xl:mx-12" src={imgsTab[cardindex]} alt={item.dtitle} loading='lazy'/>
         {/* title and msg box */}
         <div className="p-8 h-full">
           <h3 className="mb-10 xl:mb-20 font-bold text-lg xl:text-xl">{item.dtitle}</h3>
@@ -74,7 +74,8 @@ function Benefits() {
                 <Image
                   className=" absolute w-16 right-[-1rem] bottom-[-2rem]"
                   src={icons[index]}
-                  alt=""
+                  alt="icon"
+                  loading='lazy'
                 />
               </p>
             </div>

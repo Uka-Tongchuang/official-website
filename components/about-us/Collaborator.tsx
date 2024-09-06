@@ -20,7 +20,7 @@ function Collaborator() {
             >
               <Image className={` ${
                 index === 0 ? "w-40" : index === 3 ? "w-36" : "w-28"
-              } `} src={item} alt="" />
+              } `} src={item} alt="logo" loading='lazy'/>
             </div>
           );
         })}

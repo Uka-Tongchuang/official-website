@@ -26,7 +26,7 @@ function ServerCom() {
                   </ul>
                 </div>
                 <div className="w-32 xl:w-40 flex justify-center items-center">
-                    <Image className="object-contain w-[80%] mt-[10%]" src={contents[index]} alt=""/>
+                    <Image className="object-contain w-[80%] mt-[10%]" src={contents[index]} alt="icon" loading='lazy'/>
                 </div>
               </div>
             );

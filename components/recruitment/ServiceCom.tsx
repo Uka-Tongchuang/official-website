@@ -16,7 +16,8 @@ function ServiceCom() {
           <Image
             className="w-[40%] 3xl:w-96 xl:ml-[5%]"
             src={item.imgA}
-            alt=""
+            alt="icon"
+            loading='lazy'
           />
           <div className="xl:ml-[10%] text-ironside-grey">
             <h3 className="pb-10 font-bold text-xl text-azul">
@@ -39,7 +40,8 @@ function ServiceCom() {
           <Image
             className="w-[40%] 3xl:w-96 xl:ml-[10%]"
             src={item.imgB}
-            alt=""
+            alt="icon"
+            loading='lazy'
           />
         </div>
         <div className="clear-both"></div>
@@ -84,7 +86,8 @@ function ServiceCom() {
                 <Image
                   className=" absolute w-16 right-[-1rem] bottom-[-2rem]"
                   src={icons[index]}
-                  alt=""
+                  alt="icon"
+                  loading='lazy'
                 />
               </div>
             </div>

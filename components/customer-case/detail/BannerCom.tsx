@@ -62,14 +62,14 @@ function BannerCom( { id }: BannerProps ) {
       >
         <div className="w-[80%] h-auto 2xl:h-96 m-auto flex justify-between items-center">
           <div className="p-4 flex flex-col justify-between h-28">
-            <Image className="w-10" src={renderIcon(id)} alt="" />
+            <Image className="w-10" src={renderIcon(id)} alt="icon" loading='lazy'/>
             <p className="text-3xl font-bold py-4">{renderTitle(id)}</p>
           </div>
           <div className="p-16">
             <Image
-              className="object-contain w-72 2xl:w-[30rem]  rounded-xl"
+              className="object-contain w-72 2xl:w-[30rem] rounded-xl"
               src={renderImg(id)}
-              alt=""
+              alt="icon"
               loading="lazy"
             />
           </div>

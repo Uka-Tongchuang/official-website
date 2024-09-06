@@ -91,7 +91,7 @@ function ServiceCom() {
                   <RightBottomCard title="风险管理"/>
                 </div>
                 <div className="w-[80%] h-[80%] bg-azul rounded-full flex flex-col items-center text-white bg-gradient-to-b from-baby-blue to-azul">
-                  <Image className="w-[20%] pt-16" src={contentImg} alt=""/>
+                  <Image className="w-[20%] pt-16" src={contentImg} alt="service content" loading='lazy'/>
                   <h3 className="py-8 text-3xl">服务内容</h3>
                 </div>
               </div>

@@ -31,12 +31,14 @@ function Process() {
         <Image
           className="absolute w-28 bottom-[-8%] right-[-8%]"
           src={lBg}
-          alt=""
+          alt="background"
+          loading='lazy'
         />
         <Image
           className="absolute w-28 top-0 left-[-2%]"
           src={lBgImgB}
-          alt=""
+          alt="background"
+          loading='lazy'
         />
         <h3 className="h-14 flex justify-center items-center font-bold my-2">
           服务流程
@@ -84,7 +86,8 @@ function Process() {
             <Image
               className="object-contain w-full h-full"
               src={bgL}
-              alt={""}
+              alt="background"
+              loading='lazy'
             />
             <div className="absolute text-xs xl:text-md 2xl:text-lg pt-[15%] flex flex-col w-full h-full top-0 left-[10%]">{cartTitle(content.process.left)}</div>
           </div>
@@ -93,7 +96,8 @@ function Process() {
             <Image
               className="object-contain w-full h-full"
               src={bgR}
-              alt={""}
+              alt="background"
+              loading='lazy'
             />
               <div className="absolute text-xs xl:text-md 2xl:text-lg pt-[15%] flex flex-col w-full h-full top-0 left-[60%]">{cartTitle(content.process.right)}</div>
           </div>

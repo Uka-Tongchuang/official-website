@@ -16,7 +16,7 @@ function flowPath() {
   const renderCom = (img: StaticImageData, title: string): JSX.Element => {
     return (
       <div className="h-[49%] flex  justify-between items-center">
-        <Image className="w-32 h-32" loading="lazy" src={img} alt="" />
+        <Image className="w-32 h-32" loading="lazy" src={img} alt="icon" />
         <h4 className="text-xl">{title}</h4>
       </div>
     );
@@ -50,7 +50,7 @@ function flowPath() {
               className="w-[60px] h-[60px]"
               loading="lazy"
               src={item.image}
-              alt=""
+              alt="icon"
             />
             <h4>{item.title}</h4>
           </div>
@@ -67,7 +67,7 @@ function flowPath() {
               className="w-[110px] h-[110px]"
               loading="lazy"
               src={item.image}
-              alt=""
+              alt="icon"
             />
             <h4>{item.title}</h4>
           </div>

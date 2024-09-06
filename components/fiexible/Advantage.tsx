@@ -14,7 +14,7 @@ const cardrender = (item: any) => {
   return (
     <div className="">
       <div className="w-[100%] flex p-10 justify-around items-center bg-a-color mb-10">
-        <Image className="w-40  xl:ml-[5%]" src={item.imgA} alt="" />
+        <Image className="w-40  xl:ml-[5%]" src={item.imgA} alt="icon" loading='lazy'/>
         <div className="ml-10 xl:ml-[10%] text-ironside-grey">
           <h3 className="pb-10 font-bold text-xl text-azul">{item.cardF.title}</h3>
           <p>{item.cardF.msgA}</p>
@@ -29,7 +29,7 @@ const cardrender = (item: any) => {
           <p className="py-6">{item.cardS.msgB}</p>
           <p>{item.cardS.msgC}</p>
         </div>
-        <Image className="w-40 ml-10 xl:ml-[10%]" src={item.imgB} alt="" />
+        <Image className="w-40 ml-10 xl:ml-[10%]" src={item.imgB} alt="icon" loading='lazy'/>
       </div>
       <div className="clear-both"></div>
     </div>
@@ -59,7 +59,7 @@ return <div className="p-4 relative">
         <p className="py-5">{msgB}</p>
         <p>{msgC}</p>
     </div>
-    <Image className="w-20 opacity-90 absolute bottom-0 right-0" src={imgs[index]} alt={title}/>
+    <Image className="w-20 opacity-90 absolute bottom-0 right-0" src={imgs[index]} alt={title} loading='lazy'/>
 </div>
 }
 function Advantage() {

@@ -257,6 +257,7 @@ export default function Menu(): JSX.Element {
                   alt="今创人力有限公司"
                   width={100}
                   height={300}
+                  loading='lazy'
                 />
               </a>
             </div>
@@ -312,6 +313,7 @@ export default function Menu(): JSX.Element {
                   alt="今创人力有限公司"
                   width={100}
                   height={300}
+                  loading='lazy'
                 />
               </a>
             </div>

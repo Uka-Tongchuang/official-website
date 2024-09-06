@@ -154,9 +154,9 @@ export default function Footer(): JSX.Element {
           </div>
           {/* 图标 */}
           <div className="flex mt-[16px] mb-[76px]">
-            <Image className="w-[20px] h-[20px]" src={WxImg} alt="" />
-            <Image className="w-[20px] h-[20px] ml-[20px]" src={QQImg} alt="" />
-            <Image className="w-[20px] h-[20px] ml-[20px]" src={WbImg} alt="" />
+            <Image className="w-[20px] h-[20px]" src={WxImg} alt="icon" loading='lazy'/>
+            <Image className="w-[20px] h-[20px] ml-[20px]" src={QQImg} alt="icon" loading='lazy'/>
+            <Image className="w-[20px] h-[20px] ml-[20px]" src={WbImg} alt="icon" loading='lazy'/>
           </div>
           {/* 底部信息 */}
           <div className="w-[200px] h-[30px] text-xs text-gray-400 m-auto mb-[8px]">
@@ -169,7 +169,7 @@ export default function Footer(): JSX.Element {
       <div className="hidden xl:flex flex-col">
         {/* 加入我们 */}
         <div className="relative">
-          <Image className="w-full" src={BgFooterImage} alt="" />
+          <Image className="w-full" src={BgFooterImage} alt="background" loading='lazy'/>
           <div className="w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100px] flex flex-col justify-between items-center">
             <p className="text-3xl">
               已为超过<span className="text-azul">4,600</span>{" "}
@@ -186,11 +186,11 @@ export default function Footer(): JSX.Element {
           <div className="h-[417px] pt-[64px] w-[80%] m-auto items-center flex justify-between ">
             {/* 第一个盒子logo */}
             <div className="w-[33%] pl-28">
-              <Image className="w-[90px] h-[66px]" src={Logo} alt="" />
+              <Image className="w-[90px] h-[66px]" src={Logo} alt="logo" loading='lazy'/>
               <div className="mt-[40px] mb-4 flex items-center text-white text-lg">
                 <span>
                   {" "}
-                  <Image className="w-[20px] h-[20px]" src={YouXian} alt="" />
+                  <Image className="w-[20px] h-[20px]" src={YouXian} alt="email" loading='lazy'/>
                 </span>
                 <span className="ml-2 text-nav-font-color">
                   1008611@163.com
@@ -199,7 +199,7 @@ export default function Footer(): JSX.Element {
               <div className=" flex mb-4 items-center text-white text-lg">
                 <span>
                   {" "}
-                  <Image className="w-[20px] h-[20px]" src={Address} alt="" />
+                  <Image className="w-[20px] h-[20px]" src={Address} alt="address" loading='lazy'/>
                 </span>
                 <span className="ml-2 text-nav-font-color">
                   四川省成都市锦江区东大路环球贸易广场(一期)1007号
@@ -208,21 +208,23 @@ export default function Footer(): JSX.Element {
               <div className=" flex items-center text-white text-lg">
                 <span>
                   {" "}
-                  <Image className="w-[20px] h-[20px]" src={Phone} alt="" />
+                  <Image className="w-[20px] h-[20px]" src={Phone} alt="phone number" loading='lazy'/>
                 </span>
                 <span className="ml-2  text-nav-font-color">1008611110</span>
               </div>
               <div className="flex mt-[40px]">
-                <Image className="w-[20px] h-[20px]" src={WxWhite} alt="" />
+                <Image className="w-[20px] h-[20px]" src={WxWhite} alt="wechat" loading='lazy'/>
                 <Image
                   className="w-5 h-[20px] ml-[20px]"
                   src={QQWhite}
-                  alt=""
+                  alt="QQ"
+                  loading='lazy'
                 />
                 <Image
                   className="w-[20px] h-[20px] ml-[20px] "
                   src={WbWhite}
-                  alt=""
+                  alt="weibo"
+                  loading='lazy'
                 />
               </div>
             </div>

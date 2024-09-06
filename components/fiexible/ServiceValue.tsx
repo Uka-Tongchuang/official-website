@@ -41,7 +41,8 @@ function ServiceValue() {
                 <Image
                     className='w-20 absolute bottom-0 right-0 z-10'
                     src={valueBg}
-                    alt=''
+                    alt='value background'
+                    loading='lazy'
                 />
             </div>
 

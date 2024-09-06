@@ -47,7 +47,7 @@ function ServiceValue() {
                      : ""
                  }`}
                 >
-                  <Image className="w-4 md:w-6" src={imgs[index]} alt={item.title} />
+                  <Image className="w-4 md:w-6" src={imgs[index]} alt={item.title} loading='lazy'/>
                 </div>
 
                 <h3 className="ml-2 text-lg text-g-color xl:text-xl">{item.title}</h3>

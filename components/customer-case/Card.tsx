@@ -32,9 +32,10 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
       <div className="mb-10 text-md md:hidden">
         <div className="w-full rounded-tl-xl rounded-tr-xl">
           <Image
-            className="object-contain  rounded-tl-xl rounded-tr-xl"
+            className="object-contain rounded-tl-xl rounded-tr-xl"
             src={img}
-            alt=""
+            alt="icon"
+            loading='lazy'
           />
         </div>
         <div className="rounded-xl border-[1px] border-app-hr mt-[-30px] p-6 relative bg-white z-20">
@@ -64,10 +65,11 @@ function Card({ title, msg, achieve, type, img, id }: objtype) {
         <Image
           src={img}
           className="w-[26rem] h-80 xl:h-96 xl:w-[34rem]"
-          alt=""
+          alt="icon"
+          loading='lazy'
         />
         <div className="ml-[-30px] h-80 xl:h-96 bg-white rounded-xl p-1 pl-8 xl:p-12 relative ">
-        <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id)} alt=""/>
+        <Image className={`${id===1?"w-12":"w-14"}`} src={renderImgItem(id)} alt="icon" loading='lazy'/>
           <div className="font-bold py-2 text-2xl my-2">{title}</div>
           <div className="flex text-md xl:py-4">
             <div className="w-fit text-azul">需求：</div>

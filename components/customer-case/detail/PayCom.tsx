@@ -11,7 +11,7 @@ function PayCom({ id }: { id: number }) {
           交付模式
         </h3>
         <div className="w-[90%] md:w-[80%] m-auto bg-a-color my-4 p-4 flex items-center rounded-lg">
-          <Image className="w-8 mr-4 md:mb-2" src={ta} alt="" />
+          <Image className="w-8 mr-4 md:mb-2" src={ta} alt="icon" loading='lazy'/>
           <p className="text-md text-g-color">{content.arr[1].payModel}</p>
         </div>
       </div>

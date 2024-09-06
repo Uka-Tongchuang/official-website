@@ -29,7 +29,8 @@ function Card({ id }: CardProps) {
           <Image
             className=" object-contain rounded-tl-xl rounded-tr-xl"
             src={renderImg(id)}
-            alt=""
+            alt="icon"
+            loading='lazy'
           />
         </div>
         <div className="rounded-xl border-[1px] border-app-hr mt-[-30px] p-6 relative bg-white z-20">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function CustomizeFlowcharts() {
     return (
-        <Image width="800" height="535" src={pic} alt="Flow Chart" />
+        <Image width="800" height="535" src={pic} alt="Flow Chart" loading='lazy'/>
     );
 }
 

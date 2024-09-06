@@ -109,6 +109,7 @@ function ProcessCom() {
                     src={item.img}
                     alt={item.title}
                     className="object-contain"
+                    loading='lazy'
                   />
                   &ensp;
                   <span className=" md:hidden text-sm ml-1">
@@ -191,7 +192,8 @@ function ProcessCom() {
                     <Image
                       className="object-contain w-40 xl:w-52 h-full xl:ml-20"
                       src={swiperArr[index]}
-                      alt=""
+                      alt="icon"
+                      loading='lazy'
                     />
                   </div>
                   <div className="flex-1 md:w-auto mt-6 flex ">

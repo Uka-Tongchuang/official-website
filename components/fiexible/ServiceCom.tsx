@@ -15,12 +15,14 @@ function ServiceCom() {
         <Image
           className="absolute w-28 bottom-[-8%] right-[-8%]"
           src={lBg}
-          alt=""
+          alt="background"
+          loading='lazy'
         />
         <Image
           className="absolute w-28 top-0 left-[-2%]"
           src={lBgImgB}
-          alt=""
+          alt="background"
+          loading='lazy'
         />
         <h3 className="h-14 flex justify-center items-center font-bold my-2">
           服务流程

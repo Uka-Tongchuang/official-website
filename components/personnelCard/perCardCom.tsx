@@ -37,7 +37,7 @@ function perCardCom() {
               className="w-14  md:mt-8 md:ml-[70%] md:w-20 md:h-20 xl:w-24 xl:h-24 xl:absolute xl:right-0 xl:bottom-0"
               src={imgs[index]}
               loading="lazy"
-              alt=""
+              alt="icon"
             />
           </div>
         ))}

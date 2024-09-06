@@ -41,7 +41,7 @@ const BannerCom = ({ title, title2,msg, img }: propsType): JSX.Element => {
                 : ""
             }`}
             src={img}
-            alt=""
+            alt="image"
             loading="lazy"
           />
         </div>
