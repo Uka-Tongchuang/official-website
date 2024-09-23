@@ -140,15 +140,15 @@ export default function Footer(): JSX.Element {
             <div className="flex-1 flex-col juctify-between p-5">
               <div className="h-[33%] flex justify-between items-center">
                 <span className="text-md text-gray-400">邮箱</span>
-                <span className="text-md">1008611@163.com</span>
+                <span className="text-md">zhangyuchen@jinchuanghr.com</span>
               </div>
               <div className="h-[33%] flex justify-between items-center">
                 <span className="text-md text-gray-400">地址</span>
-                <span className="text-md">四川省成都市锦江区东大路xx号</span>
+                <span className="text-md">成都市锦江区东大路577号ICC1007室</span>
               </div>
               <div className="h-[33%] flex justify-between items-center">
                 <span className="text-md text-gray-400">联系方式</span>
-                <span className="text-md">180xxxx2222</span>
+                <span className="text-md">18981987023</span>
               </div>
             </div>
           </div>
