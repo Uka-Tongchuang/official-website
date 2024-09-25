@@ -130,7 +130,7 @@ export default function Footer(): JSX.Element {
                             boxShadow: " 0 2px 6px 0px rgba(0, 123, 255, 0.3)",
                         }}
                         className='rounded-[10px] h-fit shadow-md backdrop-blur-md overflow-hidden flex flex-col'>
-                        <div className='h-full w-auto'>
+                        <div className='h-full w-auto flex justify-center'>
                           <Image
                               className=''
                               src={Map}
